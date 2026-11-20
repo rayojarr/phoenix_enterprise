@@ -1,2 +1,2 @@
 # SPDX-License-Identifier: Unlicense
-"""My Headset (codename myheadset)."""
+"""PICO 4 Enterprise (codename phoenix_enterprise)."""

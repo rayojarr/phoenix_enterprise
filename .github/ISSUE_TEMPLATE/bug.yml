@@ -43,7 +43,7 @@ body:
     attributes:
       label: Logs
       description: >-
-        Attach the file Save logs… on My Headset's page in the window saves (in a terminal:
+        Attach the file Save logs… on PICO 4 Enterprise's page in the window saves (in a terminal:
         `python -m overpressure support-bundle FILE`). It holds the installer's logs, and the headset's own when its
         system runs; serial numbers are masked. Read it before attaching it.
     validations:

@@ -1,10 +1,10 @@
-# CLAUDE.md: My Headset (myheadset)
+# CLAUDE.md: PICO 4 Enterprise (phoenix_enterprise)
 
-Guidance for working on My Headset's module for overpressure, this repository, with its own releases
+Guidance for working on PICO 4 Enterprise's module for overpressure, this repository, with its own releases
 (overpressure's [CLAUDE.md](https://github.com/overpressure/overpressure/blob/main/CLAUDE.md) has the general
 rules, [GOVERNANCE.md](https://github.com/overpressure/.github/blob/main/GOVERNANCE.md) who reviews and releases
-what). This repository is dropped into `devices/myheadset/` of an overpressure checkout (for development a clone:
-`git clone https://github.com/overpressure/myheadset devices/myheadset`). Paths are relative to this repository;
+what). This repository is dropped into `devices/phoenix_enterprise/` of an overpressure checkout (for development a clone:
+`git clone https://github.com/overpressure/phoenix_enterprise devices/phoenix_enterprise`). Paths are relative to this repository;
 commands run from the overpressure checkout's root. The tooling and its tests import overpressure only through
 `overpressure.api.v1`, and never its window or command line. CI runs this repository against overpressure's
 `main`.
@@ -22,16 +22,16 @@ This repository's GitHub issues; the rules are in overpressure's CLAUDE.md.
 
 The headset's documents are in `docs/` here ([docs/README.md](docs/README.md) lists them), its overview for
 owners in `README.md`, which follows overpressure's headset README template. `python scripts/check-docs.py --repo
-devices/myheadset` checks the links and the README; a link may not leave this repository, so links to
+devices/phoenix_enterprise` checks the links and the README; a link may not leave this repository, so links to
 overpressure are GitHub URLs. Releasing: [docs/releasing.md](docs/releasing.md).
 
 ## Layout
 
 - `headset.json`: codename, name, version, the headset interface it was made for (`api`); a release zip carries its
   commit and date.
-- `tooling/`: the host tooling, reached as `python -m overpressure --device myheadset COMMAND`. `__init__.py` holds
+- `tooling/`: the host tooling, reached as `python -m overpressure --device phoenix_enterprise COMMAND`. `__init__.py` holds
   `HEADSET` (its commands, the window's steps, its doctor checks); `localconfig.py` its `.env` settings
-  (`MYHEADSET_` keys, `env.example`); `doctor.py` its checks; `dev.py` the development commands.
+  (`PHOENIX_ENTERPRISE_` keys, `env.example`); `doctor.py` its checks; `dev.py` the development commands.
 - `tests/`: host tests, no hardware. `docs/`: its documents. `.github/`: CI and the release workflow.
 - Private and generated, ignored, at the overpressure checkout's root: `backup/`, `assets/`, `cache/`, `out/`,
   `.env`.
@@ -41,11 +41,11 @@ overpressure are GitHub URLs. Releasing: [docs/releasing.md](docs/releasing.md).
 From the overpressure checkout's root:
 
 ```sh
-python -m unittest discover -t . -s devices/myheadset/tests   # host tests, seconds, no hardware
-uv run ruff format --check devices/myheadset && uv run ruff check devices/myheadset && uv run ty check devices/myheadset
+python -m unittest discover -t . -s devices/phoenix_enterprise/tests   # host tests, seconds, no hardware
+uv run ruff format --check devices/phoenix_enterprise && uv run ruff check devices/phoenix_enterprise && uv run ty check devices/phoenix_enterprise
 python -m overpressure devices                                # it loads, or why not
-python -m overpressure --device myheadset steps               # its steps and their command lines
-python -m overpressure --device myheadset dev status          # what this computer sees of the headset
+python -m overpressure --device phoenix_enterprise steps               # its steps and their command lines
+python -m overpressure --device phoenix_enterprise dev status          # what this computer sees of the headset
 ```
 
 ## Hard rules

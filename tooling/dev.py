@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Unlicense
-"""My Headset's development commands.
+"""PICO 4 Enterprise's development commands.
 
-    python -m overpressure --device myheadset dev status   what this computer sees of the headset on USB
+    python -m overpressure --device phoenix_enterprise dev status   what this computer sees of the headset on USB
 
 A starting point: it reads nothing but adb's list. The headset's own commands (images, flashing, a
 development loop) go here or into modules of their own, each named in HEADSET.commands().
@@ -30,7 +30,7 @@ def status() -> int:
 
 def main(argv: list[str]) -> int:
     """Run a development command."""
-    parser = argparse.ArgumentParser(prog="python -m overpressure --device myheadset dev")
+    parser = argparse.ArgumentParser(prog="python -m overpressure --device phoenix_enterprise dev")
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("status", help="what this computer sees of the headset on USB")
     args = parser.parse_args(argv)

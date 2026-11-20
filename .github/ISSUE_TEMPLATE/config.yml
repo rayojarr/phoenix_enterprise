@@ -1,14 +1,14 @@
 blank_issues_enabled: false
 contact_links:
   - name: Security vulnerability
-    url: https://github.com/overpressure/myheadset/security/advisories/new
+    url: https://github.com/overpressure/phoenix_enterprise/security/advisories/new
     about: Report it privately, not in a public issue.
-  - name: A question about My Headset
-    url: https://matrix.to/#/#overpressure-myheadset:matrix.org
-    about: Ask in the My Headset room of the project's Matrix space; issues are for bugs and features.
+  - name: A question about PICO 4 Enterprise
+    url: https://matrix.to/#/#overpressure-phoenix_enterprise:matrix.org
+    about: Ask in the PICO 4 Enterprise room of the project's Matrix space; issues are for bugs and features.
   - name: Documentation
-    url: https://github.com/overpressure/myheadset#readme
+    url: https://github.com/overpressure/phoenix_enterprise#readme
     about: How to install, upgrade and go back to stock.
   - name: The installer and the tools on the computer
     url: https://github.com/overpressure/overpressure/issues/new/choose
-    about: A problem of the installer window or the command line that is not My Headset's.
+    about: A problem of the installer window or the command line that is not PICO 4 Enterprise's.

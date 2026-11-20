@@ -1,6 +1,6 @@
 # A release from its tag (docs/releasing.md): a pushed tag vMAJOR.MINOR[-beta[.N]] that names headset.json's
 # version runs every CI check on the tagged commit (skipped when its tree passed against the same overpressure
-# already), then makes the GitHub release overpressure downloads (python -m overpressure headset add myheadset):
+# already), then makes the GitHub release overpressure downloads (python -m overpressure headset add phoenix_enterprise):
 # the tag's first line as its title, the tag's own words and the changelog since the release before as its
 # notes (overpressure's scripts/release.py, as overpressure's own release), the source zip (git archive:
 # headset.json carries the commit and its time) and its checksum. No image, package or vendor file is
@@ -49,7 +49,7 @@ jobs:
         run: |
           kind=$(python3 .overpressure/scripts/release.py check "$GITHUB_REF_NAME" --version-file headset.json)
           echo "kind=$kind" >> "$GITHUB_OUTPUT"
-          echo "name=myheadset-${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+          echo "name=phoenix_enterprise-${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
       - name: Annotated, on main
         run: |
           [ "$(git cat-file -t "$GITHUB_REF_NAME")" = tag ] || { echo "::error::$GITHUB_REF_NAME is not annotated: git tag -a"; exit 1; }
@@ -57,7 +57,7 @@ jobs:
       - name: Notes and changelog
         id: notes
         run: |
-          title=$(python3 .overpressure/scripts/release.py notes "$GITHUB_REF_NAME" --title "My Headset")
+          title=$(python3 .overpressure/scripts/release.py notes "$GITHUB_REF_NAME" --title "PICO 4 Enterprise")
           echo "title=$title" >> "$GITHUB_OUTPUT"
           cat notes.md
       # The tag's own words are published as they are: nothing private in them (the history scan reads commits).

@@ -1,14 +1,14 @@
 # Releasing
 
 **TL;DR.** A pushed, annotated tag `vMAJOR.MINOR[-beta[.N]]` that names `headset.json`'s version makes the
-release overpressure downloads (`python -m overpressure headset add myheadset`, the window's *Download*): the
+release overpressure downloads (`python -m overpressure headset add phoenix_enterprise`, the window's *Download*): the
 source zip and its SHA-256, nothing uploaded by hand. Only the headset's team creates its tags
 ([GOVERNANCE.md](https://github.com/overpressure/.github/blob/main/GOVERNANCE.md)).
 
 ## Versions
 
 `MAJOR.MINOR[-beta[.N]]`, as a Git tag `vMAJOR.MINOR...`, the same as `version` in
-[headset.json](../headset.json). A beta is a pre-release: `headset add myheadset` takes it while there is no
+[headset.json](../headset.json). A beta is a pre-release: `headset add phoenix_enterprise` takes it while there is no
 stable release. `api` in `headset.json` names the overpressure headset interface the release was made for: every
 overpressure that runs it installs the release, also later ones.
 

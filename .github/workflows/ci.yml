@@ -1,5 +1,5 @@
 # Every pull request, every push to main, and every release before it is made (release.yml): the headset's
-# tooling dropped into overpressure's main (devices/myheadset), as an owner's computer has it. Nothing here
+# tooling dropped into overpressure's main (devices/phoenix_enterprise), as an owner's computer has it. Nothing here
 # needs vendor files or a headset. One run per content: a tree that passed once against overpressure's main of
 # the time (a pull request's) is not tested again when it lands on main or is tagged; its checks are skipped.
 # The job ci is the one required check: it passes only when every check passed or was skipped for that reason.
@@ -64,7 +64,7 @@ jobs:
           ref: ${{ needs.tree.outputs.overpressure }}
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          path: devices/myheadset
+          path: devices/phoenix_enterprise
       - uses: astral-sh/setup-uv@18d369b23da25a81e9458561248e1aafff6a70fa # v10.3.1
         with:
           version: "0.9.26"
@@ -77,7 +77,7 @@ jobs:
           found=$(uv run python -m overpressure devices)
           echo "$found"
           ! grep -q refused <<< "$found"
-      - run: uv run python -m unittest discover -t . -s devices/myheadset/tests
+      - run: uv run python -m unittest discover -t . -s devices/phoenix_enterprise/tests
         env:
           PYTHONIOENCODING: utf-8
 
@@ -92,17 +92,17 @@ jobs:
           ref: ${{ needs.tree.outputs.overpressure }}
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          path: devices/myheadset
+          path: devices/phoenix_enterprise
       - uses: astral-sh/setup-uv@18d369b23da25a81e9458561248e1aafff6a70fa # v10.3.1
         with:
           version: "0.9.26"
       - run: uv sync --locked
       - name: Formatting
-        run: uv run ruff format --check devices/myheadset
+        run: uv run ruff format --check devices/phoenix_enterprise
       - name: Lint
-        run: uv run ruff check devices/myheadset
+        run: uv run ruff check devices/phoenix_enterprise
       - name: Types
-        run: uv run ty check devices/myheadset
+        run: uv run ty check devices/phoenix_enterprise
 
   repository:
     needs: tree
@@ -115,14 +115,14 @@ jobs:
           ref: ${{ needs.tree.outputs.overpressure }}
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          path: devices/myheadset
+          path: devices/phoenix_enterprise
           fetch-depth: 0
       - name: Links in the documents
-        run: python3 scripts/check-docs.py --repo devices/myheadset
+        run: python3 scripts/check-docs.py --repo devices/phoenix_enterprise
       - name: Shellcheck
-        run: python3 scripts/run-shellcheck.py --repo devices/myheadset
+        run: python3 scripts/run-shellcheck.py --repo devices/phoenix_enterprise
       - name: Private data, in every commit
-        run: python3 scripts/check-private.py --repo devices/myheadset --history
+        run: python3 scripts/check-private.py --repo devices/phoenix_enterprise --history
       - name: The workflows (actionlint, pinned by its release's SHA-256)
         env:
           VERSION: 1.7.12
@@ -133,7 +133,7 @@ jobs:
           curl -fsSL -o "$archive" "$release/actionlint_${VERSION}_linux_amd64.tar.gz"
           echo "$SHA256  $archive" | sha256sum -c -
           tar -xzf "$archive" -C "$RUNNER_TEMP" actionlint
-          cd devices/myheadset && "$RUNNER_TEMP/actionlint" -color
+          cd devices/phoenix_enterprise && "$RUNNER_TEMP/actionlint" -color
 
   # The marker that this tree passed, for the runs after this one.
   passed:

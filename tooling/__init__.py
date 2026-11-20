@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Unlicense
-"""My Headset's host tooling: HEADSET, its commands, the window's steps and its doctor checks.
+"""PICO 4 Enterprise's host tooling: HEADSET, its commands, the window's steps and its doctor checks.
 
 overpressure loads HEADSET from here (docs/adding-a-headset.md in overpressure). The template's one command,
 dev status, shows how a command and a window step reach the headset; the headset's own workflow replaces it:
@@ -18,13 +18,13 @@ if TYPE_CHECKING:
     from overpressure.api.v1.doctor import Check, Host
 
 
-class MyHeadset(Headset):
-    """My Headset: what overpressure's command line and window know of it."""
+class PhoenixEnterprise(Headset):
+    """PICO 4 Enterprise: what overpressure's command line and window know of it."""
 
-    info = Info("myheadset", "My Headset", "My SoC", "the approach in one line, for Advanced mode's header")
+    info = Info("phoenix_enterprise", "PICO 4 Enterprise", "Qualcomm SM8250 / Snapdragon XR2", "the approach in one line, for Advanced mode's header")
 
     def commands(self) -> dict[str, Command]:
-        """Return the command line: python -m overpressure --device myheadset dev status."""
+        """Return the command line: python -m overpressure --device phoenix_enterprise dev status."""
         return {"dev": Command("dev", "the development commands: dev status")}
 
     def steps(self) -> Sequence[Step]:
@@ -41,4 +41,4 @@ class MyHeadset(Headset):
         return probes()
 
 
-HEADSET = MyHeadset()
+HEADSET = PhoenixEnterprise()

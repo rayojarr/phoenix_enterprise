@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Unlicense
-"""My Headset's checks for python -m overpressure doctor: .env and the host tools, from overpressure's shared ones."""
+"""PICO 4 Enterprise's checks for python -m overpressure doctor: .env and the host tools, from overpressure's shared ones."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ from . import localconfig
 if TYPE_CHECKING:
     from overpressure.api.v1.doctor import Check, Host
 
-NEEDED_FOR = "My Headset's commands"
+NEEDED_FOR = "PICO 4 Enterprise's commands"
 
 
 def env(_host: Host) -> list[Check]:

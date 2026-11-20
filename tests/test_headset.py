@@ -11,7 +11,7 @@ from contextlib import redirect_stdout
 from pathlib import Path
 from unittest import mock
 
-from devices.myheadset.tooling import HEADSET, dev
+from devices.phoenix_enterprise.tooling import HEADSET, dev
 
 ROOT = Path(__file__).resolve().parents[1]
 

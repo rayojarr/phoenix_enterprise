@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Unlicense
-"""Host tests of My Headset's tooling."""
+"""Host tests of PICO 4 Enterprise's tooling."""
 
 # Tools fetched into this checkout (python -m overpressure tools) must not stand in for the tests'
 # fakes: every test sees an empty tools cache.

@@ -1,6 +1,6 @@
 {
- "codename": "myheadset",
- "name": "My Headset",
+ "codename": "phoenix_enterprise",
+ "name": "PICO 4 Enterprise",
  "version": "0.1-beta",
  "api": "1.2",
  "commit": "$Format:%H$",
