@@ -1,0 +1,524 @@
+===== CAMERA HAL DEVICE IDENTITIES =====
+    Device 0 maps to "0"
+    Device 1 maps to "3"
+    Device 2 maps to "4"
+    Device 3 maps to "5"
+== Camera HAL device device@3.5/legacy/0 (v3.5) static information: ==
+    Facing: Front
+    Orientation: 270
+      android.lens.facing (80005): byte[1]
+      android.sensor.info.physicalSize (f0005): float[2]
+      android.sensor.orientation (e000e): int32[1]
+== Camera HAL device device@3.5/legacy/0 (v3.5) dumpState: ==
+== Camera HAL device device@3.5/legacy/1 (v3.5) static information: ==
+    Facing: Front
+    Orientation: 270
+      android.lens.facing (80005): byte[1]
+      android.sensor.info.physicalSize (f0005): float[2]
+      android.sensor.orientation (e000e): int32[1]
+== Camera HAL device device@3.5/legacy/1 (v3.5) dumpState: ==
+== Camera HAL device device@3.5/legacy/2 (v3.5) static information: ==
+    Facing: Front
+    Orientation: 270
+      android.lens.facing (80005): byte[1]
+      android.sensor.info.physicalSize (f0005): float[2]
+      android.sensor.orientation (e000e): int32[1]
+== Camera HAL device device@3.5/legacy/2 (v3.5) dumpState: ==
+== Camera HAL device device@3.5/legacy/3 (v3.5) static information: ==
+    Facing: Front
+    Orientation: 270
+      android.lens.facing (80005): byte[1]
+      android.sensor.info.physicalSize (f0005): float[2]
+      android.sensor.orientation (e000e): int32[1]
+== Camera HAL device device@3.5/legacy/3 (v3.5) dumpState: ==
+== Camera HAL device device@3.5/legacy/4 (v3.5) static information: ==
+    Facing: Back
+    Orientation: 90
+      android.lens.facing (80005): byte[1]
+      android.sensor.info.physicalSize (f0005): float[2]
+      android.sensor.orientation (e000e): int32[1]
+== Camera HAL device device@3.5/legacy/4 (v3.5) dumpState: ==
+== Camera HAL device device@3.5/legacy/5 (v3.5) static information: ==
+    Facing: Back
+    Orientation: 90
+      android.lens.facing (80005): byte[1]
+      android.sensor.info.physicalSize (f0005): float[2]
+      android.sensor.orientation (e000e): int32[1]
+== Camera HAL device device@3.5/legacy/5 (v3.5) dumpState: ==
+== Camera HAL device device@3.5/legacy/6 (v3.5) static information: ==
+    Facing: Front
+    Orientation: 270
+      android.lens.facing (80005): byte[1]
+      android.sensor.info.physicalSize (f0005): float[2]
+      android.sensor.orientation (e000e): int32[1]
+== Camera HAL device device@3.5/legacy/6 (v3.5) dumpState: ==
+
+===== LIVE CAMERA DEVICE TREE =====
+--- /sys/firmware/devicetree/base/soc/qcom,cci@ac4f000/qcom,cam-sensor4 ---
+compatible:  71 63 6f 6d 2c 63 61 6d 2d 73 65 6e 73 6f 72 00
+cci-master:  00 00 00 00
+csiphy-sd-index:  00 00 00 01
+status:  6f 6b 00
+--- /sys/firmware/devicetree/base/soc/qcom,cci@ac4f000/qcom,cam-sensor2 ---
+compatible:  71 63 6f 6d 2c 63 61 6d 2d 73 65 6e 73 6f 72 00
+cci-master:  00 00 00 01
+csiphy-sd-index:  00 00 00 03
+status:  6f 6b 00
+--- /sys/firmware/devicetree/base/soc/qcom,cci@ac4f000/qcom,cam-sensor3 ---
+compatible:  71 63 6f 6d 2c 63 61 6d 2d 73 65 6e 73 6f 72 00
+cci-master:  00 00 00 01
+csiphy-sd-index:  00 00 00 04
+status:  6f 6b 00
+--- /sys/firmware/devicetree/base/soc/qcom,cci@ac50000/qcom,cam-sensor0 ---
+compatible:  71 63 6f 6d 2c 63 61 6d 2d 73 65 6e 73 6f 72 00
+cci-master:  00 00 00 00
+csiphy-sd-index:  00 00 00 05
+status:  6f 6b 00
+--- /sys/firmware/devicetree/base/soc/qcom,cci@ac50000/qcom,cam-sensor5 ---
+compatible:  71 63 6f 6d 2c 63 61 6d 2d 73 65 6e 73 6f 72 00
+cci-master:  00 00 00 01
+csiphy-sd-index:  00 00 00 02
+status:  6f 6b 00
+--- /sys/firmware/devicetree/base/soc/qcom,cci@ac50000/qcom,cam-sensor1 ---
+compatible:  71 63 6f 6d 2c 63 61 6d 2d 73 65 6e 73 6f 72 00
+cci-master:  00 00 00 00
+csiphy-sd-index:  00 00 00 03
+status:  6f 6b 00
+
+===== CAMERA VENDOR LIBRARIES =====
+/vendor/etc/init/android.hardware.sensors@2.0-service.rc
+/vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
+/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
+/vendor/etc/init/pico.camera.quickcamera.quickcameramodule@1.0-service_64.rc
+/vendor/etc/permissions/android.hardware.sensor.accelerometer.xml
+/vendor/etc/permissions/android.hardware.camera.full.xml
+/vendor/etc/permissions/android.hardware.sensor.ambient_temperature.xml
+/vendor/etc/permissions/android.hardware.sensor.barometer.xml
+/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+/vendor/etc/permissions/android.hardware.sensor.compass.xml
+/vendor/etc/permissions/android.hardware.sensor.hifi_sensors.xml
+/vendor/etc/permissions/android.hardware.sensor.stepdetector.xml
+/vendor/etc/permissions/android.hardware.camera.front.xml
+/vendor/etc/permissions/android.hardware.sensor.light.xml
+/vendor/etc/permissions/android.hardware.sensor.gyroscope.xml
+/vendor/etc/permissions/android.hardware.camera.flash-autofocus.xml
+/vendor/etc/permissions/android.hardware.sensor.proximity.xml
+/vendor/etc/permissions/android.hardware.camera.raw.xml
+/vendor/etc/permissions/android.hardware.sensor.relative_humidity.xml
+/vendor/etc/permissions/android.hardware.sensor.stepcounter.xml
+/vendor/etc/pvr/init.pvr.camera.calibration.sh
+/vendor/etc/pvr/init.pvr.camera.warmstart.sh
+/vendor/etc/sensors/sns_reg_config
+/vendor/etc/sensors/hals.conf
+/vendor/etc/sensors/config/sns_amd_sw_enabled.json
+/vendor/etc/sensors/config/kona_ak991x_0.json
+/vendor/etc/sensors/config/sns_amd_sw_disabled.json
+/vendor/etc/sensors/config/kona_irq.json
+/vendor/etc/sensors/config/sns_tilt_sw_enabled.json
+/vendor/etc/sensors/config/sxr2130_sns_amd_sw_enabled.json
+/vendor/etc/sensors/config/sns_ccd_v3_walk.json
+/vendor/etc/sensors/config/sns_ccd_v2_walk.json
+/vendor/etc/sensors/config/sns_geomag_rv.json
+/vendor/etc/sensors/config/sns_aont.json
+/vendor/etc/sensors/config/kona_default_sensors.json
+/vendor/etc/sensors/config/sns_pedometer.json
+/vendor/etc/sensors/config/kona_stk3x1x_0.json
+/vendor/etc/sensors/config/sns_bring_to_ear.json
+/vendor/etc/sensors/config/sns_smd.json
+/vendor/etc/sensors/config/sns_tilt_to_wake.json
+/vendor/etc/sensors/config/sns_distance_bound.json
+/vendor/etc/sensors/config/sns_cm.json
+/vendor/etc/sensors/config/sns_dae.json
+/vendor/etc/sensors/config/sns_tilt_sw_disabled.json
+/vendor/etc/sensors/config/sns_basic_gestures.json
+/vendor/etc/sensors/config/sns_rmd.json
+/vendor/etc/sensors/config/sns_ccd.json
+/vendor/etc/sensors/config/sns_rotv.json
+/vendor/etc/sensors/config/kona_power_0.json
+/vendor/etc/sensors/config/sns_mag_cal.json
+/vendor/etc/sensors/config/kona_dynamic_sensors.json
+/vendor/etc/sensors/config/sxr2130_sns_dae.json
+/vendor/etc/sensors/config/sns_mag_cal_legacy.json
+/vendor/etc/sensors/config/wigig_sensing_0.json
+/vendor/etc/sensors/config/sns_facing.json
+/vendor/etc/sensors/config/sns_device_orient.json
+/vendor/etc/sensors/config/sns_dpc.json
+/vendor/etc/sensors/config/sns_tilt.json
+/vendor/etc/sensors/config/sns_amd.json
+/vendor/etc/sensors/config/sxr2130_llcm.json
+/vendor/etc/sensors/config/sns_heart_rate.json
+/vendor/etc/sensors/config/kona_sx932x_0.json
+/vendor/etc/sensors/config/sxr2130_icm4x6xx_0.json
+/vendor/etc/sensors/config/sxr2130_sns_tilt_sw_enabled.json
+/vendor/etc/sensors/config/sns_multishake.json
+/vendor/etc/sensors/config/sns_fmv.json
+/vendor/etc/sensors/config/sns_diag_filter.json
+/vendor/etc/sensors/config/sns_gyro_cal.json
+/vendor/lib64/android.hardware.camera.provider@2.4-external.so
+/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+/vendor/lib64/android.hardware.sensors@2.0-impl.so
+/vendor/lib64/camera/com.qti.tuned.sm8250_truly_imx476.bin
+/vendor/lib64/camera/fdconfigpreviewlite.bin
+/vendor/lib64/camera/com.qti.sensormodule.liteon_ov7251_slave.quickaccess.bin
+/vendor/lib64/camera/com.qti.sensor.imx471.so
+/vendor/lib64/camera/com.qti.sensormodule.liteon_imx471.bin
+/vendor/lib64/camera/com.qti.sensor.ov7251_slave.so
+/vendor/lib64/camera/com.qti.eeprom.sunny_d8v19q.so
+/vendor/lib64/camera/com.qti.sensor.ov8856_ar.so
+/vendor/lib64/camera/fdconfigvideolite.bin
+/vendor/lib64/camera/com.qti.sensor.pico_ov7251_left.so
+/vendor/lib64/camera/fdconfigvideo.bin
+/vendor/lib64/camera/com.qti.tuned.default.bin
+/vendor/lib64/camera/com.qti.sensormodule.liteon_pico_ov7251_right.quickaccess.bin
+/vendor/lib64/camera/components/com.qti.node.dummysat.so
+/vendor/lib64/camera/components/com.qti.eisv3.so
+/vendor/lib64/camera/components/com.qti.stats.afd.so
+/vendor/lib64/camera/components/com.qti.node.eisv2.so
+/vendor/lib64/camera/components/com.qti.stats.awb.so
+/vendor/lib64/camera/components/com.qti.hvx.addconstant.so
+/vendor/lib64/camera/components/com.qti.node.swregistration.so
+/vendor/lib64/camera/components/com.qti.stats.aec.so
+/vendor/lib64/camera/components/com.qti.node.gpu.so
+/vendor/lib64/camera/components/com.qti.node.eisv3.so
+/vendor/lib64/camera/components/com.qtistatic.stats.aec.so
+/vendor/lib64/camera/components/com.qti.node.depth.so
+/vendor/lib64/camera/components/com.qti.node.customhwnode.so
+/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
+/vendor/lib64/camera/components/com.qti.stats.tracker.so
+/vendor/lib64/camera/components/com.qti.stats.asd.so
+/vendor/lib64/camera/components/com.qti.hvx.binning.so
+/vendor/lib64/camera/components/com.qti.node.memcpy.so
+/vendor/lib64/camera/components/com.qti.node.fcv.so
+/vendor/lib64/camera/components/com.qti.stats.afwrapper.so
+/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
+/vendor/lib64/camera/components/com.qti.eisv2.so
+/vendor/lib64/camera/components/com.qti.stats.af.so
+/vendor/lib64/camera/components/com.qti.stats.pdlib.so
+/vendor/lib64/camera/components/com.qtistatic.stats.awb.so
+/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
+/vendor/lib64/camera/components/com.qti.node.stich.so
+/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so
+/vendor/lib64/camera/components/com.qti.stats.hafoverride.so
+/vendor/lib64/camera/components/com.qti.node.dummyrtb.so
+/vendor/lib64/camera/components/com.qtistatic.stats.af.so
+/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
+/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so
+/vendor/lib64/camera/components/com.qti.node.remosaic.so
+/vendor/lib64/camera/components/com.qti.stats.haf.so
+/vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so
+/vendor/lib64/camera/com.qti.sensor.ov7251_master.so
+/vendor/lib64/camera/com.qti.sensormodule.liteon_ov680.bin
+/vendor/lib64/camera/com.qti.sensormodule.liteon_pico_ov7251_left.quickaccess.bin
+/vendor/lib64/camera/com.qti.tuned.sm8250_sunny_imx471.bin
+/vendor/lib64/camera/com.qti.sensor.ov9282_left.so
+/vendor/lib64/camera/fdconfigpreview.bin
+/vendor/lib64/camera/com.qti.sensormodule.sunny_imx471.bin
+/vendor/lib64/camera/com.qti.sensormodule.liteon_ov7251_master.quickaccess.bin
+/vendor/lib64/camera/com.qti.sensor.ov680.so
+/vendor/lib64/camera/com.qti.sensor.ov9282_right.so
+/vendor/lib64/camera/com.qti.sensor.pico_ov7251_right.so
+/vendor/lib64/camera.device@1.0-impl.so
+/vendor/lib64/camera.device@3.2-impl.so
+/vendor/lib64/camera.device@3.3-impl.so
+/vendor/lib64/camera.device@3.4-external-impl.so
+/vendor/lib64/camera.device@3.4-impl.so
+/vendor/lib64/camera.device@3.5-external-impl.so
+/vendor/lib64/camera.device@3.5-impl.so
+/vendor/lib64/camx_core.so
+/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+/vendor/lib64/hw/com.qti.chi.override.so
+/vendor/lib64/hw/pico.camera.quickcamera.quickcameramodule@1.0-impl.so
+/vendor/lib64/hw/camera.qcom.so
+/vendor/lib64/libbatching.so
+/vendor/lib64/libcamera2ndk_vendor.so
+/vendor/lib64/libcamera_nn_stub.so
+/vendor/lib64/libcamerapostproc.so
+/vendor/lib64/libcamxexternalformatutils.so
+/vendor/lib64/libcamxfacialfeatures.so
+/vendor/lib64/libcamxfdalgo.so
+/vendor/lib64/libcamxfdengine.so
+/vendor/lib64/libcamxifestriping.so
+/vendor/lib64/libcamximageformatutils.so
+/vendor/lib64/libcamxncs.so
+/vendor/lib64/libcamxstatscore.so
+/vendor/lib64/libcamxswprocessalgo.so
+/vendor/lib64/libcamxtintlessalgo.so
+/vendor/lib64/libchilog.so
+/vendor/lib64/libcom.qti.chinodeutils.so
+/vendor/lib64/libmmcamera_faceproc.so
+/vendor/lib64/libmmcamera_faceproc2.so
+/vendor/lib64/libsensorcal.so
+/vendor/lib64/libsensorndkbridge.so
+/vendor/lib64/libsensorslog.so
+/vendor/lib64/pico.camera.quickcamera.common@1.0.so
+/vendor/lib64/pico.camera.quickcamera.quickcameradevice@1.0.so
+/vendor/lib64/pico.camera.quickcamera.quickcameramodule@1.0.so
+/vendor/lib64/quickcamera.core.so
+/vendor/lib64/sensors-common-eeprom.pvr.so
+/vendor/lib64/sensors-common-imu.pvr.so
+/vendor/lib64/sensors-common-ndifpga.pvr.so
+/vendor/lib64/sensors.ssc.so
+/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
+/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
+/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+
+===== CAMERA SENSOR PROBE AND TRACKING LOGS =====
+11-20 18:32:01.638 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.60, 8.34, 8.88
+11-20 18:32:03.648 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 13.51, 8.39, 8.88
+11-20 18:32:05.660 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.45, 8.42, 8.88
+11-20 18:32:07.660 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.42, 8.38, 8.88
+11-20 18:32:09.671 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 12.00, 8.49, 8.96
+11-20 18:32:11.671 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.38, 8.45, 8.92
+11-20 18:32:13.682 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 10.76, 8.41, 8.95
+11-20 18:32:15.693 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.49, 8.51, 8.94
+11-20 18:32:17.704 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.42, 8.41, 8.84
+11-20 18:32:19.704 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 14.67, 8.38, 8.97
+11-20 18:32:21.715 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.39, 8.44, 8.91
+11-20 18:32:23.715 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 13.76, 8.41, 8.90
+11-20 18:32:25.726 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.33, 8.35, 8.87
+11-20 18:32:27.736 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.42, 8.38, 8.87
+11-20 18:32:29.747 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 11.80, 8.39, 8.90
+11-20 18:32:31.758 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.54, 8.36, 8.88
+11-20 18:32:33.769 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 11.41, 8.40, 8.89
+11-20 18:32:35.769 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.37, 8.46, 8.89
+11-20 18:32:37.780 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.57, 8.40, 8.84
+11-20 18:32:39.791 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 12.48, 8.43, 8.95
+11-20 18:32:41.791 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.41, 8.40, 8.88
+11-20 18:32:43.791 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 12.22, 8.39, 8.89
+11-20 18:32:45.803 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.43, 8.55, 8.97
+11-20 18:32:47.813 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.85, 8.41, 8.93
+11-20 18:32:49.824 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 13.02, 8.42, 9.01
+11-20 18:32:51.835 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.75, 8.36, 8.91
+11-20 18:32:53.835 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 10.06, 8.48, 8.93
+11-20 18:32:55.846 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.58, 8.48, 8.97
+11-20 18:32:57.847 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.33, 8.41, 8.85
+11-20 18:32:59.857 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 10.04, 8.41, 8.92
+11-20 18:33:01.857 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.48, 8.47, 8.92
+11-20 18:33:03.868 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 14.89, 8.53, 9.00
+11-20 18:33:05.879 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.66, 8.53, 8.95
+11-20 18:33:07.890 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.46, 8.40, 8.94
+11-20 18:33:09.432 23811 23843 E PvrTrackingCamera: processBatchCaptureRequests: Transaction error: Status(EX_TRANSACTION_FAILED): 'DEAD_OBJECT: '
+11-20 18:33:09.432 23811 23843 E PvrTrackingCamera: RequestThread: Camera 5 Unable to submit capture request 481443 to HAL device: Broken pipe (-32)
+11-20 18:33:09.455 32746 32746 I <KERNEL|(1)kworker/u16:4  >: [34929.620425] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Dropping the link to regulator.26
+11-20 18:33:09.455 32746 32746 I <KERNEL|(1)kworker/u16:4  >: [34929.620530] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Dropping the link to regulator.71
+11-20 18:33:09.475 32746 32746 I <KERNEL|(4)kworker/u16:4  >: [34929.640262] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Dropping the link to regulator.39
+11-20 18:33:09.805 23811 23838 I EyeTrackingService: watchCameraLoop: the number of camera opened is 1.
+11-20 18:33:09.805 23811 23838 I EyeTrackingService: watchCameraLoop: camera 5, exposure 2.000000, gain 8.000000
+11-20 18:33:09.805 23811 23838 I EyeTrackingService: closeCamera: E
+11-20 18:33:09.805 23811 23838 I EyeTrackingService: closing camera
+11-20 18:33:09.805 23811 23838 I EyeTrackingService: closeCamera,1416:acquire camera 5 lock
+11-20 18:33:09.805 23811 23838 I EyeTrackingService: closeCamera,1418:acquire camera 5 lock success
+11-20 18:33:09.805 23811 23838 I EyeTrackingService: [stopPreview]type 5
+11-20 18:33:09.805 23811 23838 I PvrTrackingCamera: cancelRequest: Camera 5 disconnect and acquire mLock, mStatus 0
+11-20 18:33:09.805 23811 23838 E PvrTrackingCamera: Can't stop streaming
+11-20 18:33:09.805 23811 23838 I EyeTrackingService: [stopPreview]type 5, end
+11-20 18:33:09.805 23811 23838 I EyeTrackingService: closeCamera,1426:acquire camera 5 lock
+11-20 18:33:09.805 23811 23838 I EyeTrackingService: closeCamera,1428:acquire camera 5 lock success
+11-20 18:33:09.805 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 0.
+11-20 18:33:09.805 23811 23838 E PvrTrackingCamera: Shutting down in an error state
+11-20 18:33:09.805 23811 23838 E PvrTrackingCamera: mHidlSession close error
+11-20 18:33:09.805 23811 23838 I PvrTrackingCamera: CameraOutputStream::~CameraOutputStream
+11-20 18:33:09.811 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:09.811 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:09.811 23811 23838 I EyeTrackingService: ~CameraImageListener: E.
+11-20 18:33:09.812 23811 23839 I EyeTrackingService: notifyFrameArrived: X.
+11-20 18:33:09.812 23811 23838 I EyeTrackingService: ~CameraImageListener: X.
+11-20 18:33:09.813 23811 23838 I EyeTrackingService: camera 5, lastFn, 0,missFrames 0
+11-20 18:33:09.813 23811 23838 I EyeTrackingService: resetLedParameter: mLastPhoenixLedMode 0, mLastPhoenixLedBrightness 0, mLastPhoenixFaceLedBrightness 0
+11-20 18:33:09.813 23811 23838 I EyeTrackingService: resetLedParameter: X.
+11-20 18:33:09.813 23811 23838 I EyeTrackingService: closeCameraHelper: type 5 X
+11-20 18:33:09.816 23811 23838 I EyeTrackingService: closeCamera: X
+11-20 18:33:10.216 23811 23838 I EyeTrackingService: openCamera: standard E
+11-20 18:33:10.216 23811 23838 I EyeTrackingService: openCamera: open camera
+11-20 18:33:10.223 23811 23838 I EyeTrackingService: openCamera: set camera led to mPhoenixLedMode 8
+11-20 18:33:10.223 23811 23838 I EyeTrackingCamera: setLedMode: led mode 8.
+11-20 18:33:10.223 23811 23838 I EyeTrackingCamera: setLedBrightness: brightness 10.
+11-20 18:33:10.223 23811 23838 I EyeTrackingCamera: setFaceLedBrightness: brightness 40.
+11-20 18:33:10.223 23811 23838 E EyeTrackingCamera: Create PicoCameraDevice failed, error number -2.
+11-20 18:33:10.223 23811 23838 I EyeTrackingService: openCameraList, retry to open camera 5, times 1
+11-20 18:33:10.223 23811 23838 I EyeTrackingService: [stopPreview]type 5
+11-20 18:33:10.223 23811 23838 I PvrTrackingCamera: cancelRequest: Camera 5 disconnect and acquire mLock, mStatus 1
+11-20 18:33:10.223 23811 23838 I EyeTrackingService: [stopPreview]type 5, end
+11-20 18:33:10.223 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.224 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.224 23811 23838 I EyeTrackingService: ~CameraImageListener: E.
+11-20 18:33:10.224 23811  7249 I EyeTrackingService: notifyFrameArrived: X.
+11-20 18:33:10.224 23811 23838 I EyeTrackingService: ~CameraImageListener: X.
+11-20 18:33:10.225 23811 23838 I EyeTrackingService: camera 5, lastFn, 0,missFrames 0
+11-20 18:33:10.226 23811 23838 I EyeTrackingService: resetLedParameter: mLastPhoenixLedMode 0, mLastPhoenixLedBrightness 0, mLastPhoenixFaceLedBrightness 0
+11-20 18:33:10.226 23811 23838 I EyeTrackingService: resetLedParameter: X.
+11-20 18:33:10.226 23811 23838 I EyeTrackingService: closeCameraHelper: type 5 X
+11-20 18:33:10.335 23811 23838 I EyeTrackingService: openCamera: set camera led to mPhoenixLedMode 8
+11-20 18:33:10.335 23811 23838 I EyeTrackingCamera: setLedMode: led mode 8.
+11-20 18:33:10.335 23811 23838 I EyeTrackingCamera: setLedBrightness: brightness 10.
+11-20 18:33:10.335 23811 23838 I EyeTrackingCamera: setFaceLedBrightness: brightness 40.
+11-20 18:33:10.335 23811 23838 E EyeTrackingCamera: Create PicoCameraDevice failed, error number -2.
+11-20 18:33:10.335 23811 23838 I EyeTrackingService: openCameraList, openSingleCamera 5 ret -1
+11-20 18:33:10.335 23811 23838 I EyeTrackingService: openCameraList, retry to open camera 5, times 2
+11-20 18:33:10.335 23811 23838 I EyeTrackingService: [stopPreview]type 5
+11-20 18:33:10.335 23811 23838 I PvrTrackingCamera: cancelRequest: Camera 5 disconnect and acquire mLock, mStatus 1
+11-20 18:33:10.335 23811 23838 I EyeTrackingService: [stopPreview]type 5, end
+11-20 18:33:10.335 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.336 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.336 23811 23838 I EyeTrackingService: ~CameraImageListener: E.
+11-20 18:33:10.336 23811  7250 I EyeTrackingService: notifyFrameArrived: X.
+11-20 18:33:10.336 23811 23838 I EyeTrackingService: ~CameraImageListener: X.
+11-20 18:33:10.337 23811 23838 I EyeTrackingService: camera 5, lastFn, 0,missFrames 0
+11-20 18:33:10.337 23811 23838 I EyeTrackingService: resetLedParameter: mLastPhoenixLedMode 0, mLastPhoenixLedBrightness 0, mLastPhoenixFaceLedBrightness 0
+11-20 18:33:10.337 23811 23838 I EyeTrackingService: resetLedParameter: X.
+11-20 18:33:10.337 23811 23838 I EyeTrackingService: closeCameraHelper: type 5 X
+11-20 18:33:10.380  7167  7167 E CamX    : [ERROR][CORE   ] camxhwenvironment.cpp:843 ProbeImageSensorModules()  sm8250_sunny_imx471 probe result failed ！
+11-20 18:33:10.446 23811 23838 I EyeTrackingService: openCamera: set camera led to mPhoenixLedMode 8
+11-20 18:33:10.446 23811 23838 I EyeTrackingCamera: setLedMode: led mode 8.
+11-20 18:33:10.446 23811 23838 I EyeTrackingCamera: setLedBrightness: brightness 10.
+11-20 18:33:10.446 23811 23838 I EyeTrackingCamera: setFaceLedBrightness: brightness 40.
+11-20 18:33:10.446 23811 23838 E EyeTrackingCamera: Create PicoCameraDevice failed, error number -2.
+11-20 18:33:10.446 23811 23838 I EyeTrackingService: openCameraList, openSingleCamera 5 ret -1
+11-20 18:33:10.446 23811 23838 I EyeTrackingService: openCameraList, retry to open camera 5, times 3
+11-20 18:33:10.446 23811 23838 I EyeTrackingService: [stopPreview]type 5
+11-20 18:33:10.446 23811 23838 I PvrTrackingCamera: cancelRequest: Camera 5 disconnect and acquire mLock, mStatus 1
+11-20 18:33:10.446 23811 23838 I EyeTrackingService: [stopPreview]type 5, end
+11-20 18:33:10.446 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.447 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.447 23811 23838 I EyeTrackingService: ~CameraImageListener: E.
+11-20 18:33:10.447 23811  7251 I EyeTrackingService: notifyFrameArrived: X.
+11-20 18:33:10.447 23811 23838 I EyeTrackingService: ~CameraImageListener: X.
+11-20 18:33:10.448 23811 23838 I EyeTrackingService: camera 5, lastFn, 0,missFrames 0
+11-20 18:33:10.448 23811 23838 I EyeTrackingService: resetLedParameter: mLastPhoenixLedMode 0, mLastPhoenixLedBrightness 0, mLastPhoenixFaceLedBrightness 0
+11-20 18:33:10.448 23811 23838 I EyeTrackingService: resetLedParameter: X.
+11-20 18:33:10.448 23811 23838 I EyeTrackingService: closeCameraHelper: type 5 X
+11-20 18:33:10.558 23811 23838 I EyeTrackingService: openCamera: set camera led to mPhoenixLedMode 8
+11-20 18:33:10.558 23811 23838 I EyeTrackingCamera: setLedMode: led mode 8.
+11-20 18:33:10.558 23811 23838 I EyeTrackingCamera: setLedBrightness: brightness 10.
+11-20 18:33:10.558 23811 23838 I EyeTrackingCamera: setFaceLedBrightness: brightness 40.
+11-20 18:33:10.558 23811 23838 E EyeTrackingCamera: Create PicoCameraDevice failed, error number -2.
+11-20 18:33:10.558 23811 23838 I EyeTrackingService: openCameraList, openSingleCamera 5 ret -1
+11-20 18:33:10.610 23811 27846 E /system/bin/pxreyetrackingservice: Can't set scheduler policy on remote service.
+11-20 18:33:10.658 23811 23838 I EyeTrackingService: openCamera, try open 1 cameras, but only 0 cameras is opened
+11-20 18:33:10.658 23811 23838 I EyeTrackingService: openCamera: failed open all cameras.
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: openCamera: standard E
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: openCamera: open camera
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: openCameraList, retry to open camera 5, times 1
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: [stopPreview]type 5
+11-20 18:33:11.059 23811 23838 I PvrTrackingCamera: cancelRequest: Camera 5 disconnect and acquire mLock, mStatus 1
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: [stopPreview]type 5, end
+11-20 18:33:11.059 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:11.059 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: ~CameraImageListener: E.
+11-20 18:33:11.059 23811  7252 I EyeTrackingService: notifyFrameArrived: X.
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: ~CameraImageListener: X.
+11-20 18:33:11.061 23811 23838 I EyeTrackingService: camera 5, lastFn, 0,missFrames 0
+11-20 18:33:11.061 23811 23838 I EyeTrackingService: resetLedParameter: mLastPhoenixLedMode 0, mLastPhoenixLedBrightness 0, mLastPhoenixFaceLedBrightness 0
+11-20 18:33:11.061 23811 23838 I EyeTrackingService: resetLedParameter: X.
+11-20 18:33:11.061 23811 23838 I EyeTrackingService: closeCameraHelper: type 5 X
+11-20 18:33:11.181 23811 23838 I EyeTrackingService: openCamera: set camera led to mPhoenixLedMode 8
+11-20 18:33:11.181 23811 23838 I EyeTrackingCamera: setLedMode: led mode 8.
+11-20 18:33:11.181 23811 23838 I EyeTrackingCamera: setLedBrightness: brightness 10.
+11-20 18:33:11.181 23811 23838 I EyeTrackingCamera: setFaceLedBrightness: brightness 40.
+11-20 18:33:11.181 23811 23838 W PvrTrackingCamera: initialize: Camera 5 waited provider for 0 ms
+11-20 18:33:11.192 23811 23838 I EyeTrackingCamera: [startPreview,179] Camera, 5, mNumPartialResults 1, mUsePartialResult:0
+11-20 18:33:11.205 23811 23838 I EyeTrackingCamera: writeLedNode: E.
+11-20 18:33:11.210 23811 23838 I EyeTrackingCamera: writeLedNode: X.
+11-20 18:33:11.210 23811 23838 I PvrTrackingCamera: Camera 5: Creating new stream 0: 400 x 1600, format 36, dataspace 0 rotation 0 consumer usage 0, physicalCameraId 
+11-20 18:33:11.227  7167  7267 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:652 FindBestSensorMode() value is NULL
+11-20 18:33:11.227  7167  7267 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 18:33:11.227  7167  7267 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 18:33:11.243  7257  7257 I <KERNEL|(3)provider@2.4-se>: [34931.408942] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Linked as a consumer to regulator.26
+11-20 18:33:11.257  7257  7257 I <KERNEL|(2)provider@2.4-se>: [34931.422188] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Linked as a consumer to regulator.39
+11-20 18:33:11.277  7257  7257 I <KERNEL|(3)provider@2.4-se>: [34931.442309] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Linked as a consumer to regulator.71
+11-20 18:33:12.321 23811 23838 I PvrTrackingCamera: configureConsumerQueue,819200
+11-20 18:33:12.321 23811 23838 I PvrTrackingCamera: configureConsumerQueue, native_window_set_buffers_dimensions, 819200,1
+11-20 18:33:12.321 23811 23838 I EyeTrackingCamera: startPreview: camera right, format 36, width 400, heidht 1600, fps 90, frame_duration 11111111, exposure 2000000, gain 800
+11-20 18:33:12.321 23811 23838 I EyeTrackingService: openCameraList, openSingleCamera 5 ret 0
+11-20 18:33:12.422 23811 23838 I EyeTrackingService: open camera is complete
+11-20 18:33:14.439 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 10.99, 8.37, 8.93
+11-20 18:33:16.450 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.56, 8.38, 8.90
+11-20 18:33:18.450 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.38, 8.37, 8.85
+11-20 18:33:20.461 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 11.05, 8.36, 8.92
+11-20 18:33:22.472 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.45, 8.36, 8.88
+11-20 18:33:24.483 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 12.97, 8.41, 8.92
+11-20 18:33:26.494 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.39, 8.45, 8.91
+11-20 18:33:28.494 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 11.41, 8.37, 8.89
+11-20 18:33:30.494 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 12.72, 8.46, 8.97
+11-20 18:33:32.505 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.51, 8.42, 8.92
+11-20 18:33:34.516 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 12.13, 8.37, 8.96
+11-20 18:33:36.527 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.44, 8.44, 8.90
+11-20 18:33:38.537 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.48, 8.38, 8.84
+11-20 18:33:40.549 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.94, 8.46, 8.94
+11-20 18:33:42.549 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.44, 8.36, 8.85
+11-20 18:33:44.549 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 10.12, 8.36, 8.91
+11-20 18:33:46.560 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.50, 8.48, 8.94
+11-20 18:33:48.571 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.36, 8.50, 8.91
+11-20 18:33:50.582 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 10.14, 8.35, 8.94
+11-20 18:33:52.582 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.47, 8.50, 8.93
+11-20 18:33:54.593 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 10.22, 8.46, 8.94
+11-20 18:33:56.604 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.46, 8.46, 8.96
+11-20 18:33:58.604 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.38, 8.39, 8.82
+11-20 18:34:00.615 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.66, 8.35, 8.90
+11-20 18:34:02.625 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.32, 8.35, 8.86
+11-20 18:34:04.626 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 13.75, 8.43, 8.95
+11-20 18:34:06.626 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.50, 8.49, 8.94
+11-20 18:34:08.636 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.40, 8.40, 8.89
+11-20 18:34:10.647 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 10.55, 8.43, 8.93
+11-20 18:34:12.647 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.49, 8.34, 8.91
+11-20 18:34:14.647 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 11.50, 8.43, 8.89
+11-20 18:34:16.658 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.50, 8.40, 8.88
+11-20 18:34:18.670 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.46, 8.33, 8.87
+11-20 18:34:20.680 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.84, 8.36, 8.90
+11-20 18:34:22.691 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.38, 8.45, 8.87
+11-20 18:34:24.691 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 12.88, 8.46, 8.97
+11-20 18:34:26.702 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.46, 8.51, 8.93
+11-20 18:34:28.713 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.42, 8.34, 8.87
+11-20 18:34:30.713 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 10.58, 8.42, 8.90
+11-20 18:34:32.713 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.35, 8.44, 8.91
+11-20 18:34:34.724 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 11.17, 8.41, 8.93
+11-20 18:34:36.735 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.49, 8.45, 8.93
+11-20 18:34:37.717  1176  1273 I am_pss  : [23811,0,pxreyetrackingservice,36211,23604,0,78052,-1,-1,-1]
+11-20 18:34:38.746 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.61, 8.28, 8.71
+11-20 18:34:40.757 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.65, 8.43, 8.88
+11-20 18:34:42.768 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.36, 8.32, 8.85
+11-20 18:34:44.779 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 10.01, 8.47, 8.93
+11-20 18:34:46.779 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.40, 8.43, 8.86
+11-20 18:34:48.779 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 12.30, 8.42, 8.92
+11-20 18:34:50.790 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 10.19, 8.47, 8.93
+11-20 18:34:52.801 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.44, 8.48, 8.90
+11-20 18:34:54.801 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 12.20, 8.47, 8.96
+11-20 18:34:56.811 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.53, 8.50, 8.92
+11-20 18:34:58.812 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.70, 8.35, 8.88
+11-20 18:35:00.823 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 14.51, 8.42, 8.94
+11-20 18:35:02.834 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.59, 8.30, 8.84
+11-20 18:35:04.834 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 10.46, 8.37, 8.88
+11-20 18:35:06.844 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.54, 8.44, 8.89
+11-20 18:35:08.845 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 12.17, 8.41, 8.90
+11-20 18:35:10.845 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.90, 8.40, 8.92
+11-20 18:35:12.856 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.49, 8.43, 8.90
+11-20 18:35:14.856 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 13.92, 8.48, 8.96
+11-20 18:35:16.866 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.66, 8.46, 8.93
+11-20 18:35:18.866 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.43, 8.39, 8.84
+11-20 18:35:20.867 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 11.90, 8.33, 8.89
+11-20 18:35:22.877 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.53, 8.46, 8.88
+11-20 18:35:24.877 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 10.00, 8.45, 8.92
+11-20 18:35:26.888 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.32, 8.45, 8.91
+11-20 18:35:28.888 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 11.36, 8.40, 8.91
+11-20 18:35:30.899 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.90, 8.47, 8.93
+11-20 18:35:32.910 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.62, 8.55, 8.97
+11-20 18:35:34.921 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.80, 8.43, 8.93
+11-20 18:35:36.932 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.42, 8.43, 8.93
+11-20 18:35:38.932 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.52, 8.44, 8.85
+11-20 18:35:40.943 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 10.12, 8.35, 8.89
+11-20 18:35:42.943 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.42, 8.47, 8.86
+11-20 18:35:44.954 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 11.56, 8.44, 8.96
+11-20 18:35:46.965 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.45, 8.43, 8.93
+11-20 18:35:48.965 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 9.39, 8.42, 8.92
+11-20 18:35:50.976 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 181, 9.75, 8.40, 8.92
+11-20 18:35:52.976 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 12.24, 8.33, 8.70
+11-20 18:35:54.976 23811 27846 I EyeTrackingService: Last 2 seconds camera 5 latency, 180, 11.21, 8.30, 8.81
+
+===== DISPLAY ACTIVE MODE =====
+--- /sys/class/drm/card0-DSI-1/status ---
+connected
+--- /sys/class/drm/card0-DSI-1/modes ---
+4320x2160x90x331212vid
+4320x2160x72x331212vid
