@@ -1,0 +1,528 @@
+===== CAMERA 5 COMPLETE DEVICE TREE NODE =====
+			qcom,cam-sensor5 {
+				cell-index = <0x05>;
+				compatible = "qcom,cam-sensor";
+				csiphy-sd-index = <0x02>;
+				sensor-position-roll = <0x5a>;
+				sensor-position-pitch = <0x00>;
+				sensor-position-yaw = <0xb4>;
+				cam_bob-supply = <0x2ca>;
+				cam_vio-supply = <0x37b>;
+				cam_vdig-supply = <0x383>;
+				cam_clk-supply = <0x250>;
+				regulator-names = "cam_vio", "cam_vdig", "cam_clk";
+				rgltr-cntrl-support;
+				pwm-switch;
+				rgltr-min-voltage = <0x1b7740 0x124f80 0x00>;
+				rgltr-max-voltage = <0x1b7740 0x124f80 0x00>;
+				rgltr-load-current = <0x927c0 0x927c0 0x00>;
+				gpio-no-mux = <0x00>;
+				pinctrl-names = "cam_default", "cam_suspend";
+				pinctrl-0 = <0x475 0x49a>;
+				pinctrl-1 = <0x476 0x49b>;
+				gpios = <0x65 0x64 0x00 0x65 0x05 0x00 0x65 0x25 0x00 0x65 0x4e 0x00 0x65 0x3a 0x00>;
+				gpio-reset = <0x01>;
+				gpio-standby = <0x02>;
+				gpio-custom1 = <0x03>;
+				gpio-custom2 = <0x04>;
+				gpio-req-tbl-num = <0x00 0x01 0x02 0x03 0x04>;
+				gpio-req-tbl-flags = <0x01 0x00 0x00 0x00 0x00>;
+				gpio-req-tbl-label = "CAMIF_MCLK6", "CAM_RESET6", "CAM_STANDBY6", "CAM_FLASH", "CAM_VIO";
+				sensor-mode = <0x00>;
+				cci-master = <0x01>;
+				status = "ok";
+				clocks = <0x6c 0x55>;
+				clock-names = "cam_clk";
+				clock-cntl-level = "turbo";
+				clock-rates = <0x124f800>;
+			};
+
+===== ALL CAMERA SENSOR NODES =====
+			qcom,cam-sensor4 {
+				cell-index = <0x04>;
+				compatible = "qcom,cam-sensor";
+				csiphy-sd-index = <0x01>;
+				sensor-position-roll = <0x5a>;
+				sensor-position-pitch = <0x00>;
+				sensor-position-yaw = <0xb4>;
+				eeprom-src = <0x695>;
+				cam_bob-supply = <0x2ca>;
+				cam_vdig-supply = <0x382>;
+				cam_vio-supply = <0x7f>;
+				cam_clk-supply = <0x250>;
+				regulator-names = "cam_vdig", "cam_vio", "cam_clk";
+				rgltr-cntrl-support;
+				pwm-switch;
+				rgltr-min-voltage = <0x106738 0x1b7740 0x00>;
+				rgltr-max-voltage = <0x106738 0x1b7740 0x00>;
+				rgltr-load-current = <0x927c0 0x927c0 0x00>;
+				gpio-no-mux = <0x00>;
+				pinctrl-names = "cam_default", "cam_suspend";
+				pinctrl-0 = <0x46b>;
+				pinctrl-1 = <0x46c>;
+				gpios = <0x65 0x5f 0x00 0x65 0x17 0x00 0x65 0x72 0x00>;
+				gpio-reset = <0x01>;
+				gpio-standby = <0x02>;
+				gpio-req-tbl-num = <0x00 0x01 0x02>;
+				gpio-req-tbl-flags = <0x01 0x00 0x00>;
+				gpio-req-tbl-label = "CAMIF_MCLK1", "CAM_RESET1", "CAM_STANDBY1";
+				sensor-mode = <0x00>;
+				cci-master = <0x00>;
+				status = "ok";
+				clocks = <0x6c 0x4b>;
+				clock-names = "cam_clk";
+				clock-cntl-level = "turbo";
+				clock-rates = <0x16e3600>;
+			};
+
+			qcom,cam-sensor2 {
+				cell-index = <0x02>;
+				compatible = "qcom,cam-sensor";
+				csiphy-sd-index = <0x03>;
+				sensor-position-roll = <0x5a>;
+				sensor-position-pitch = <0x00>;
+				sensor-position-yaw = <0xb4>;
+				cam_clk-supply = <0x250>;
+				cam_bob-supply = <0x2ca>;
+				regulator-names = "cam_clk";
+				rgltr-cntrl-support;
+				pwm-switch;
+				rgltr-min-voltage = <0x00>;
+				rgltr-max-voltage = <0x00>;
+				rgltr-load-current = <0x00>;
+				gpio-no-mux = <0x00>;
+				pinctrl-names = "cam_default", "cam_suspend";
+				pinctrl-0 = <0x46d>;
+				pinctrl-1 = <0x46e>;
+				gpios = <0x65 0x60 0x00 0x65 0x73 0x00 0x65 0x2a 0x00>;
+				gpio-reset = <0x01>;
+				gpio-standby = <0x02>;
+				gpio-req-tbl-num = <0x00 0x01 0x02>;
+				gpio-req-tbl-flags = <0x01 0x00 0x00>;
+				gpio-req-tbl-label = "CAMIF_MCLK2", "CAM_RESET2", "CAM_STANDBY2";
+				sensor-mode = <0x00>;
+				cci-master = <0x01>;
+				status = "ok";
+				clocks = <0x6c 0x4d>;
+				clock-names = "cam_clk";
+				clock-cntl-level = "turbo";
+				clock-rates = <0x16e3600>;
+			};
+
+			qcom,cam-sensor3 {
+				cell-index = <0x03>;
+				compatible = "qcom,cam-sensor";
+				csiphy-sd-index = <0x04>;
+				sensor-position-roll = <0x5a>;
+				sensor-position-pitch = <0x00>;
+				sensor-position-yaw = <0xb4>;
+				led-flash-src = <0x696>;
+				cam_clk-supply = <0x250>;
+				cam_bob-supply = <0x2ca>;
+				cam_vana-supply = <0x388>;
+				regulator-names = "cam_clk", "cam_vana";
+				rgltr-cntrl-support;
+				pwm-switch;
+				rgltr-min-voltage = <0x00 0x2ab980>;
+				rgltr-max-voltage = <0x00 0x2ab980>;
+				rgltr-load-current = <0x00 0x5b8d80>;
+				gpio-no-mux = <0x00>;
+				pinctrl-names = "cam_default", "cam_suspend";
+				pinctrl-0 = <0x473>;
+				pinctrl-1 = <0x474>;
+				gpios = <0x65 0x63 0x00 0x65 0x73 0x00 0x65 0x2a 0x00 0x65 0x7e 0x00>;
+				gpio-reset = <0x01>;
+				gpio-standby = <0x02>;
+				gpio-custom1 = <0x03>;
+				gpio-req-tbl-num = <0x00 0x01 0x02 0x03>;
+				gpio-req-tbl-flags = <0x01 0x00 0x00 0x00>;
+				gpio-req-tbl-label = "CAMIF_MCLK5", "CAM_RESET5", "CAM_STANDBY5", "CAM_CUSTOM1";
+				sensor-mode = <0x00>;
+				cci-master = <0x01>;
+				status = "ok";
+				clocks = <0x6c 0x53>;
+				clock-names = "cam_clk";
+				clock-cntl-level = "turbo";
+				clock-rates = <0x16e3600>;
+			};
+
+			qcom,cam-sensor5 {
+				cell-index = <0x05>;
+				compatible = "qcom,cam-sensor";
+				csiphy-sd-index = <0x02>;
+				sensor-position-roll = <0x5a>;
+				sensor-position-pitch = <0x00>;
+				sensor-position-yaw = <0xb4>;
+				cam_bob-supply = <0x2ca>;
+				cam_vio-supply = <0x37b>;
+				cam_vdig-supply = <0x383>;
+				cam_clk-supply = <0x250>;
+				regulator-names = "cam_vio", "cam_vdig", "cam_clk";
+				rgltr-cntrl-support;
+				pwm-switch;
+				rgltr-min-voltage = <0x1b7740 0x124f80 0x00>;
+				rgltr-max-voltage = <0x1b7740 0x124f80 0x00>;
+				rgltr-load-current = <0x927c0 0x927c0 0x00>;
+				gpio-no-mux = <0x00>;
+				pinctrl-names = "cam_default", "cam_suspend";
+				pinctrl-0 = <0x475 0x49a>;
+				pinctrl-1 = <0x476 0x49b>;
+				gpios = <0x65 0x64 0x00 0x65 0x05 0x00 0x65 0x25 0x00 0x65 0x4e 0x00 0x65 0x3a 0x00>;
+				gpio-reset = <0x01>;
+				gpio-standby = <0x02>;
+				gpio-custom1 = <0x03>;
+				gpio-custom2 = <0x04>;
+				gpio-req-tbl-num = <0x00 0x01 0x02 0x03 0x04>;
+				gpio-req-tbl-flags = <0x01 0x00 0x00 0x00 0x00>;
+				gpio-req-tbl-label = "CAMIF_MCLK6", "CAM_RESET6", "CAM_STANDBY6", "CAM_FLASH", "CAM_VIO";
+				sensor-mode = <0x00>;
+				cci-master = <0x01>;
+				status = "ok";
+				clocks = <0x6c 0x55>;
+				clock-names = "cam_clk";
+				clock-cntl-level = "turbo";
+				clock-rates = <0x124f800>;
+			};
+
+			qcom,cam-sensor0 {
+				cell-index = <0x00>;
+				compatible = "qcom,cam-sensor";
+				csiphy-sd-index = <0x05>;
+				sensor-position-roll = <0x5a>;
+				sensor-position-pitch = <0x00>;
+				sensor-position-yaw = <0xb4>;
+				cam_clk-supply = <0x250>;
+				cam_bob-supply = <0x2ca>;
+				regulator-names = "cam_clk";
+				rgltr-cntrl-support;
+				pwm-switch;
+				rgltr-min-voltage = <0x00>;
+				rgltr-max-voltage = <0x00>;
+				rgltr-load-current = <0x00>;
+				gpio-no-mux = <0x00>;
+				pinctrl-names = "cam_default", "cam_suspend";
+				pinctrl-0 = <0x46f>;
+				pinctrl-1 = <0x470>;
+				gpios = <0x65 0x61 0x00 0x65 0x73 0x00 0x65 0x2a 0x00>;
+				gpio-reset = <0x01>;
+				gpio-standby = <0x02>;
+				gpio-req-tbl-num = <0x00 0x01 0x02>;
+				gpio-req-tbl-flags = <0x01 0x00 0x00>;
+				gpio-req-tbl-label = "CAMIF_MCLK3", "CAM_RESET3", "CAM_STANDBY3";
+				sensor-mode = <0x00>;
+				cci-master = <0x00>;
+				status = "ok";
+				clocks = <0x6c 0x4f>;
+				clock-names = "cam_clk";
+				clock-cntl-level = "turbo";
+				clock-rates = <0x16e3600>;
+			};
+
+			qcom,cam-sensor1 {
+				cell-index = <0x01>;
+				compatible = "qcom,cam-sensor";
+				csiphy-sd-index = <0x03>;
+				sensor-position-roll = <0x5a>;
+				sensor-position-pitch = <0x00>;
+				sensor-position-yaw = <0xb4>;
+				cam_clk-supply = <0x250>;
+				cam_bob-supply = <0x2ca>;
+				regulator-names = "cam_clk";
+				rgltr-cntrl-support;
+				pwm-switch;
+				rgltr-min-voltage = <0x00>;
+				rgltr-max-voltage = <0x00>;
+				rgltr-load-current = <0x00>;
+				gpio-no-mux = <0x00>;
+				pinctrl-names = "cam_default", "cam_suspend";
+				pinctrl-0 = <0x471>;
+				pinctrl-1 = <0x472>;
+				gpios = <0x65 0x62 0x00 0x65 0x73 0x00 0x65 0x2a 0x00>;
+				gpio-reset = <0x01>;
+				gpio-standby = <0x02>;
+				gpio-req-tbl-num = <0x00 0x01 0x02>;
+				gpio-req-tbl-flags = <0x01 0x00 0x00>;
+				gpio-req-tbl-label = "CAMIF_MCLK4", "CAM_RESET4", "CAM_STANDBY4";
+				sensor-mode = <0x00>;
+				cci-master = <0x00>;
+				status = "ok";
+				clocks = <0x6c 0x51>;
+				clock-names = "cam_clk";
+				clock-cntl-level = "turbo";
+				clock-rates = <0x16e3600>;
+			};
+
+
+===== SENSOR IDENTIFICATION PROPERTIES =====
+25301:				gpio-reset = <0x01>;
+25307:				cci-master = <0x00>;
+25319:				csiphy-sd-index = <0x01>;
+25320:				sensor-position-roll = <0x5a>;
+25321:				sensor-position-pitch = <0x00>;
+25322:				sensor-position-yaw = <0xb4>;
+25339:				gpio-reset = <0x01>;
+25345:				cci-master = <0x00>;
+25356:				csiphy-sd-index = <0x03>;
+25357:				sensor-position-roll = <0x5a>;
+25358:				sensor-position-pitch = <0x00>;
+25359:				sensor-position-yaw = <0xb4>;
+25373:				gpio-reset = <0x01>;
+25379:				cci-master = <0x01>;
+25390:				csiphy-sd-index = <0x04>;
+25391:				sensor-position-roll = <0x5a>;
+25392:				sensor-position-pitch = <0x00>;
+25393:				sensor-position-yaw = <0xb4>;
+25409:				gpio-reset = <0x01>;
+25416:				cci-master = <0x01>;
+25517:				csiphy-sd-index = <0x02>;
+25518:				sensor-position-roll = <0x5a>;
+25519:				sensor-position-pitch = <0x00>;
+25520:				sensor-position-yaw = <0xb4>;
+25536:				gpio-reset = <0x01>;
+25544:				cci-master = <0x01>;
+25555:				csiphy-sd-index = <0x05>;
+25556:				sensor-position-roll = <0x5a>;
+25557:				sensor-position-pitch = <0x00>;
+25558:				sensor-position-yaw = <0xb4>;
+25572:				gpio-reset = <0x01>;
+25578:				cci-master = <0x00>;
+25589:				csiphy-sd-index = <0x03>;
+25590:				sensor-position-roll = <0x5a>;
+25591:				sensor-position-pitch = <0x00>;
+25592:				sensor-position-yaw = <0xb4>;
+25606:				gpio-reset = <0x01>;
+25612:				cci-master = <0x00>;
+30935:				qcom,qmi-sensor-names = "pa", "pa_1", "qfe_wtr0", "modem_tsens", "qfe_mmw0", "qfe_mmw1", "qfe_mmw2", "qfe_mmw3", "xo_therm", "qfe_mmw_streamer0", "qfe_mmw0_mod", "qfe_mmw1_mod", "qfe_mmw2_mod", "qfe_mmw3_mod", "qfe_ret_pa0", "qfe_wtr_pa0", "qfe_wtr_pa1", "qfe_wtr_pa2", "qfe_wtr_pa3", "sys_therm1", "sys_therm2", "modem_tsens1";
+
+===== AVAILABLE CALIBRATION FILES =====
+--- /vendor/etc/qvr ---
+--- /vendor/etc/pvr ---
+/vendor/etc/pvr/pvr.preboot.mode.sh
+/vendor/etc/pvr/pvr.vrdisplay.ui.sh
+/vendor/etc/pvr/pxr.init.ota.update.sh
+/vendor/etc/pvr/A7D10_B3_main.mci
+/vendor/etc/pvr/init.pico.sh
+/vendor/etc/pvr/init.pvr.camera.calibration.sh
+/vendor/etc/pvr/A7B10_B2_main.mci
+/vendor/etc/pvr/A7C10_B3_main.mci
+/vendor/etc/pvr/pvr.main.mci.check.sh
+/vendor/etc/pvr/A7C10_B1_main.mci
+/vendor/etc/pvr/main.mci
+/vendor/etc/pvr/pvr.copy.bootanim.sh
+/vendor/etc/pvr/pvr.ipd.check.sh
+/vendor/etc/pvr/A7D10_main.mci
+/vendor/etc/pvr/init.pvr.camera.warmstart.sh
+/vendor/etc/pvr/A7B10_main.mci
+/vendor/etc/pvr/pvr.display.swtich_eb.sh
+/vendor/etc/pvr/init.pvr.chmod.file.sh
+/vendor/etc/pvr/pvr.prop.default.sh
+/vendor/etc/pvr/A7D10_B2_main.mci
+/vendor/etc/pvr/A7B10_B1_main.mci
+/vendor/etc/pvr/init.picovr.post_boot.sh
+/vendor/etc/pvr/pvr.calibration.qcom.sh
+/vendor/etc/pvr/pxr.res.init.sh
+/vendor/etc/pvr/pvr.calibration2.qcom.sh
+/vendor/etc/pvr/pvr.display.fps.sh
+/vendor/etc/pvr/init.btmac.sh
+/vendor/etc/pvr/A7C10_B2_main.mci
+/vendor/etc/pvr/A7D10_B1_main.mci
+/vendor/etc/pvr/A7B10_B3_main.mci
+/vendor/etc/pvr/pxr.vendorhw.check.sh
+/vendor/etc/pvr/A7C10_main.mci
+/vendor/etc/pvr/pvr.otg.mode.sh
+/vendor/etc/pvr/pvr.update.splash.sh
+/vendor/etc/pvr/pxr.ndifirmware.update.sh
+/vendor/etc/pvr/init.factory_reset.sh
+--- /data/local/tmp ---
+/data/local/tmp/eyed.shm
+/data/local/tmp/eyed-stable-slot.bin
+/data/local/tmp/kgsl-speed-bin
+--- /data/misc/qvr ---
+
+===== CAMERA CONFIGURATION REFERENCES =====
+/vendor/etc/pvr/init.pvr.camera.calibration.sh:23:SYSTEM_CONFIG_PATH="/vendor/etc/qvr/ov9282_stereo_1280x400_cam_config.xml"
+/vendor/etc/pvr/init.pvr.camera.calibration.sh:24:DATA_CONFIG_PATH="/data/local/tmp/ov9282_stereo_1280x400_cam_config.xml"
+/vendor/etc/pvr/init.pvr.camera.calibration.sh:25:SDCARD_CONFIG_PATH="/data/media/0/camera/ov9282_stereo_1280x400_cam_config.xml"
+/vendor/etc/pvr/init.pvr.camera.calibration.sh:26:BACKUP_CONFIG_PATH="/persist/pvr/camera/ov9282_stereo_1280x400_cam_config.xml"
+
+===== ANDROID CAMERA SERVICE =====
+Number of camera devices: 7
+Number of normal camera devices: 4
+== Camera device 0 dynamic info: ==
+== Camera device 1 dynamic info: ==
+== Camera device 2 dynamic info: ==
+== Camera device 3 dynamic info: ==
+== Camera device 4 dynamic info: ==
+== Camera device 5 dynamic info: ==
+== Camera Provider HAL legacy/0 (v2.5, remote) static info: 7 devices: ==
+        [BACKWARD_COMPATIBLE RAW YUV_REPROCESSING PRIVATE_REPROCESSING READ_SENSOR_SETTINGS MANUAL_SENSOR BURST_CAPTURE MANUAL_POST_PROCESSING ]
+        [34 640 400 OUTPUT ]
+        [34 640 400 INPUT ]
+        [35 640 400 OUTPUT ]
+        [35 640 400 INPUT ]
+        [33 640 400 OUTPUT ]
+        [400 33333333 ]
+        [400 33333333 ]
+        [400 33333333 ]
+        [400 1664000 ]
+      android.sensor.info.activeArraySize (f0000): int32[4]
+      android.sensor.opaqueRawSize (e001e): int32[3]
+      android.sensor.info.sensitivityRange (f0001): int32[2]
+      android.sensor.info.colorFilterArrangement (f0002): byte[1]
+      android.sensor.info.exposureTimeRange (f0003): int64[2]
+      android.sensor.info.maxFrameDuration (f0004): int64[1]
+      android.sensor.info.physicalSize (f0005): float[2]
+      android.sensor.info.pixelArraySize (f0006): int32[2]
+      android.sensor.info.whiteLevel (f0007): int32[1]
+      android.sensor.info.timestampSource (f0008): byte[1]
+      android.sensor.info.lensShadingApplied (f0009): byte[1]
+      android.sensor.info.preCorrectionActiveArraySize (f000a): int32[4]
+      android.sensor.referenceIlluminant1 (e0003): byte[1]
+      android.sensor.referenceIlluminant2 (e0004): byte[1]
+      android.sensor.calibrationTransform1 (e0005): rational[9]
+      android.sensor.calibrationTransform2 (e0006): rational[9]
+      android.sensor.colorTransform1 (e0007): rational[9]
+      android.sensor.colorTransform2 (e0008): rational[9]
+      android.sensor.forwardMatrix1 (e0009): rational[9]
+      android.sensor.forwardMatrix2 (e000a): rational[9]
+      android.sensor.blackLevelPattern (e000c): int32[4]
+      android.sensor.maxAnalogSensitivity (e000d): int32[1]
+      android.sensor.orientation (e000e): int32[1]
+      android.sensor.profileHueSatMapDimensions (e000f): int32[3]
+      android.sensor.availableTestPatternModes (e0019): int32[4]
+      org.quic.camera.SensorModeFS.isFastShutterModeSupported (803e0000): byte[1]
+      org.quic.camera2.sensormode.info.SensorModeTable (802f0000): int32[17]
+        [400 60 640 360 ]
+        [640 400 30 60 ]
+        [640 400 60 60 ]
+      vendor.pico.camera.sensormodule.moduleType (80600000): int32[1]
+      vendor.pico.camera.sensormodule.moduleId (80600002): int32[1]
+      vendor.pico.camera.sensorModeInfos (80600003): int32[321]
+      org.codeaurora.qcamera3.logicalCameraType.logical_camera_type (80440000): byte[1]
+      org.codeaurora.qcamera3.logicalCameraType.physicalCameraIds (80440002): int32[1]
+        [33 640 400 OUTPUT ]
+        [400 33333333 ]
+        [400 9009009 ]
+No active camera device session instance
+        [BACKWARD_COMPATIBLE RAW YUV_REPROCESSING PRIVATE_REPROCESSING READ_SENSOR_SETTINGS MANUAL_SENSOR BURST_CAPTURE MANUAL_POST_PROCESSING ]
+        [34 640 400 OUTPUT ]
+        [34 640 400 INPUT ]
+        [35 640 400 OUTPUT ]
+        [35 640 400 INPUT ]
+        [33 640 400 OUTPUT ]
+        [400 33333333 ]
+        [400 33333333 ]
+        [400 33333333 ]
+        [400 1664000 ]
+      android.sensor.info.activeArraySize (f0000): int32[4]
+      android.sensor.opaqueRawSize (e001e): int32[3]
+      android.sensor.info.sensitivityRange (f0001): int32[2]
+      android.sensor.info.colorFilterArrangement (f0002): byte[1]
+      android.sensor.info.exposureTimeRange (f0003): int64[2]
+      android.sensor.info.maxFrameDuration (f0004): int64[1]
+      android.sensor.info.physicalSize (f0005): float[2]
+      android.sensor.info.pixelArraySize (f0006): int32[2]
+      android.sensor.info.whiteLevel (f0007): int32[1]
+      android.sensor.info.timestampSource (f0008): byte[1]
+      android.sensor.info.lensShadingApplied (f0009): byte[1]
+      android.sensor.info.preCorrectionActiveArraySize (f000a): int32[4]
+      android.sensor.referenceIlluminant1 (e0003): byte[1]
+      android.sensor.referenceIlluminant2 (e0004): byte[1]
+      android.sensor.calibrationTransform1 (e0005): rational[9]
+      android.sensor.calibrationTransform2 (e0006): rational[9]
+      android.sensor.colorTransform1 (e0007): rational[9]
+      android.sensor.colorTransform2 (e0008): rational[9]
+      android.sensor.forwardMatrix1 (e0009): rational[9]
+      android.sensor.forwardMatrix2 (e000a): rational[9]
+      android.sensor.blackLevelPattern (e000c): int32[4]
+      android.sensor.maxAnalogSensitivity (e000d): int32[1]
+      android.sensor.orientation (e000e): int32[1]
+      android.sensor.profileHueSatMapDimensions (e000f): int32[3]
+      android.sensor.availableTestPatternModes (e0019): int32[4]
+      org.quic.camera.SensorModeFS.isFastShutterModeSupported (803e0000): byte[1]
+      org.quic.camera2.sensormode.info.SensorModeTable (802f0000): int32[17]
+        [400 60 640 360 ]
+        [640 400 30 60 ]
+        [640 400 60 60 ]
+      vendor.pico.camera.sensormodule.moduleType (80600000): int32[1]
+      vendor.pico.camera.sensormodule.moduleId (80600002): int32[1]
+      vendor.pico.camera.sensorModeInfos (80600003): int32[321]
+      org.codeaurora.qcamera3.logicalCameraType.logical_camera_type (80440000): byte[1]
+      org.codeaurora.qcamera3.logicalCameraType.physicalCameraIds (80440002): int32[1]
+        [33 640 400 OUTPUT ]
+        [400 33333333 ]
+        [400 9009009 ]
+No active camera device session instance
+        [BACKWARD_COMPATIBLE RAW YUV_REPROCESSING PRIVATE_REPROCESSING READ_SENSOR_SETTINGS MANUAL_SENSOR BURST_CAPTURE MANUAL_POST_PROCESSING ]
+        [34 640 400 OUTPUT ]
+        [34 640 400 INPUT ]
+        [35 640 400 OUTPUT ]
+        [35 640 400 INPUT ]
+        [33 640 400 OUTPUT ]
+        [400 33333333 ]
+        [400 33333333 ]
+        [400 33333333 ]
+        [400 1664000 ]
+      android.sensor.info.activeArraySize (f0000): int32[4]
+      android.sensor.opaqueRawSize (e001e): int32[3]
+      android.sensor.info.sensitivityRange (f0001): int32[2]
+      android.sensor.info.colorFilterArrangement (f0002): byte[1]
+      android.sensor.info.exposureTimeRange (f0003): int64[2]
+      android.sensor.info.maxFrameDuration (f0004): int64[1]
+      android.sensor.info.physicalSize (f0005): float[2]
+      android.sensor.info.pixelArraySize (f0006): int32[2]
+      android.sensor.info.whiteLevel (f0007): int32[1]
+      android.sensor.info.timestampSource (f0008): byte[1]
+      android.sensor.info.lensShadingApplied (f0009): byte[1]
+      android.sensor.info.preCorrectionActiveArraySize (f000a): int32[4]
+      android.sensor.referenceIlluminant1 (e0003): byte[1]
+      android.sensor.referenceIlluminant2 (e0004): byte[1]
+      android.sensor.calibrationTransform1 (e0005): rational[9]
+      android.sensor.calibrationTransform2 (e0006): rational[9]
+      android.sensor.colorTransform1 (e0007): rational[9]
+      android.sensor.colorTransform2 (e0008): rational[9]
+      android.sensor.forwardMatrix1 (e0009): rational[9]
+      android.sensor.forwardMatrix2 (e000a): rational[9]
+      android.sensor.blackLevelPattern (e000c): int32[4]
+      android.sensor.maxAnalogSensitivity (e000d): int32[1]
+      android.sensor.orientation (e000e): int32[1]
+      android.sensor.profileHueSatMapDimensions (e000f): int32[3]
+      android.sensor.availableTestPatternModes (e0019): int32[4]
+      org.quic.camera.SensorModeFS.isFastShutterModeSupported (803e0000): byte[1]
+      org.quic.camera2.sensormode.info.SensorModeTable (802f0000): int32[17]
+        [400 60 640 360 ]
+        [640 400 30 60 ]
+        [640 400 60 60 ]
+      vendor.pico.camera.sensormodule.moduleType (80600000): int32[1]
+      vendor.pico.camera.sensormodule.moduleId (80600002): int32[1]
+      vendor.pico.camera.sensorModeInfos (80600003): int32[321]
+      org.codeaurora.qcamera3.logicalCameraType.logical_camera_type (80440000): byte[1]
+      org.codeaurora.qcamera3.logicalCameraType.physicalCameraIds (80440002): int32[1]
+        [33 640 400 OUTPUT ]
+        [400 33333333 ]
+        [400 9009009 ]
+No active camera device session instance
+        [BACKWARD_COMPATIBLE RAW YUV_REPROCESSING PRIVATE_REPROCESSING READ_SENSOR_SETTINGS MANUAL_SENSOR BURST_CAPTURE MANUAL_POST_PROCESSING ]
+        [34 640 400 OUTPUT ]
+        [34 640 400 INPUT ]
+        [35 640 400 OUTPUT ]
+        [35 640 400 INPUT ]
+        [33 640 400 OUTPUT ]
+        [400 33333333 ]
+        [400 33333333 ]
+        [400 33333333 ]
+        [400 1664000 ]
+      android.sensor.info.activeArraySize (f0000): int32[4]
+      android.sensor.opaqueRawSize (e001e): int32[3]
+      android.sensor.info.sensitivityRange (f0001): int32[2]
+      android.sensor.info.colorFilterArrangement (f0002): byte[1]
+      android.sensor.info.exposureTimeRange (f0003): int64[2]
+      android.sensor.info.maxFrameDuration (f0004): int64[1]
+      android.sensor.info.physicalSize (f0005): float[2]
+      android.sensor.info.pixelArraySize (f0006): int32[2]
+      android.sensor.info.whiteLevel (f0007): int32[1]
+      android.sensor.info.timestampSource (f0008): byte[1]
+      android.sensor.info.lensShadingApplied (f0009): byte[1]
+      android.sensor.info.preCorrectionActiveArraySize (f000a): int32[4]
+      android.sensor.referenceIlluminant1 (e0003): byte[1]
+      android.sensor.referenceIlluminant2 (e0004): byte[1]
