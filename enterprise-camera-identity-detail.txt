@@ -1,0 +1,331 @@
+===== PVR CAMERA CALIBRATION SCRIPT =====
+r#!/system/bin/sh
+# *********************************************************************
+# *            copy wifi config file                                  *
+# *********************************************************************
+PATH=/sbin:/system/sbin:/system/bin:/system/xbin
+export PATH
+
+ACTION_REMOUNTSYSTEM="remountSystem"
+
+ACTION_CLEAN_CAMERADATA="cleanCameraData"
+
+ACTION_UPDATE_SD="updateFromSD"
+ACTION_UPDATE_DATA="updateFromData"
+ACTION_UPDATE_FROMBACKUP="updateFromBackup"
+ACTION_BACKUP="backup"
+
+ACTION_USEPERSIST_CONFIG="usePersistConfig"
+
+ACTION_CHECK_CONFIG="checkConfig"
+
+ACTION_CIT="updateCameraConfig"
+
+SYSTEM_CONFIG_PATH="/vendor/etc/qvr/ov9282_stereo_1280x400_cam_config.xml"
+DATA_CONFIG_PATH="/data/local/tmp/ov9282_stereo_1280x400_cam_config.xml"
+SDCARD_CONFIG_PATH="/data/media/0/camera/ov9282_stereo_1280x400_cam_config.xml"
+BACKUP_CONFIG_PATH="/persist/pvr/camera/ov9282_stereo_1280x400_cam_config.xml"
+
+CAMERA_DATA_PATH="/data/misc/qvr/*"
+
+para=$1
+
+echo "we will do ${para} action" > /dev/kmsg
+
+if [ $ACTION_CIT = ${para} ];then
+    echo "we get updateCameraConfig action" > /dev/kmsg
+    if [ -f $DATA_CONFIG_PATH ]; then
+	echo "data path has file" > /dev/kmsg
+#	remount /system
+#	sleep 1
+	cp $DATA_CONFIG_PATH $BACKUP_CONFIG_PATH
+#	rm -rf $SYSTEM_CONFIG_PATH
+#	ln -s $BACKUP_CONFIG_PATH $SYSTEM_CONFIG_PATH
+#	chmod 664 $SYSTEM_CONFIG_PATH
+	chmod 664 $BACKUP_CONFIG_PATH
+#	chown system:system $SYSTEM_CONFIG_PATH
+	chown system:system $BACKUP_CONFIG_PATH
+        rm -rf $CAMERA_DATA_PATH
+    fi
+fi
+
+if [ $ACTION_USEPERSIST_CONFIG = ${para} ];then
+    echo "we get usePersistConfig action" > /dev/kmsg
+    if [ -f $BACKUP_CONFIG_PATH ]; then
+	echo "persist path has file" > /dev/kmsg
+	remount /system
+	sleep 1
+	rm -rf $SYSTEM_CONFIG_PATH
+	ln -s $BACKUP_CONFIG_PATH $SYSTEM_CONFIG_PATH
+	chmod 664 $SYSTEM_CONFIG_PATH
+	chmod 664 $BACKUP_CONFIG_PATH
+	chown system:system $SYSTEM_CONFIG_PATH
+	chown system:system $BACKUP_CONFIG_PATH
+    fi
+fi
+
+if [ $ACTION_REMOUNTSYSTEM = ${para} ];then
+    echo "we get remountSystem action" > /dev/kmsg
+    remount /system
+    sleep 1
+fi
+
+if [ $ACTION_CLEAN_CAMERADATA = ${para} ];then
+    echo "we get cleanCameraData action" > /dev/kmsg
+    rm -rf $CAMERA_DATA_PATH
+fi
+
+if [ $ACTION_UPDATE_FROMBACKUP = ${para} ];then
+    echo "we get updateFromBackup action" > /dev/kmsg
+    if [ -f $BACKUP_CONFIG_PATH ]; then
+	echo "persist path has file" > /dev/kmsg
+	remount /system
+	sleep 1
+	rm -rf $SYSTEM_CONFIG_PATH
+	cp $BACKUP_CONFIG_PATH $SYSTEM_CONFIG_PATH
+	chmod 664 $SYSTEM_CONFIG_PATH
+	chmod 664 $BACKUP_CONFIG_PATH
+	chown system:system $SYSTEM_CONFIG_PATH
+	chown system:system $BACKUP_CONFIG_PATH
+    fi
+fi
+
+if [ $ACTION_UPDATE_SD = ${para} ];then
+    echo "we get updateFromSD action" > /dev/kmsg
+    if [ -f $SDCARD_CONFIG_PATH ]; then
+	echo "sdcard path has file" > /dev/kmsg
+	remount /system
+	sleep 1
+	rm -rf $SYSTEM_CONFIG_PATH
+	cp $SDCARD_CONFIG_PATH $SYSTEM_CONFIG_PATH
+	chmod 664 $SYSTEM_CONFIG_PATH
+	chmod 664 $BACKUP_CONFIG_PATH
+	chown system:system $SYSTEM_CONFIG_PATH
+	chown system:system $BACKUP_CONFIG_PATH
+    fi
+fi
+
+if [ $ACTION_UPDATE_DATA = ${para} ];then
+    echo "we get updateFromData action" > /dev/kmsg
+    if [ -f $DATA_CONFIG_PATH ]; then
+	echo "data path has file" > /dev/kmsg
+	remount /system
+	sleep 1
+	rm -rf $SYSTEM_CONFIG_PATH
+	cp $DATA_CONFIG_PATH $SYSTEM_CONFIG_PATH
+	chmod 664 $SYSTEM_CONFIG_PATH
+	chmod 664 $BACKUP_CONFIG_PATH
+    fi
+fi
+
+if [ $ACTION_BACKUP = ${para} ];then
+    echo "we get backup action" > /dev/kmsg
+    if [ -f $SYSTEM_CONFIG_PATH ]; then
+	echo "system path has file" > /dev/kmsg
+	remount /persist
+	sleep 1
+	rm -rf $SYSTEM_CONFIG_PATH
+	cp $SYSTEM_CONFIG_PATH $BACKUP_CONFIG_PATH
+	chmod 664 $SYSTEM_CONFIG_PATH
+	chmod 664 $BACKUP_CONFIG_PATH
+	chown system:system $SYSTEM_CONFIG_PATH
+	chown system:system $BACKUP_CONFIG_PATH
+    fi
+fi
+
+if [ $ACTION_CHECK_CONFIG = ${para} ];then
+    echo "we get checkConfig action" > /dev/kmsg
+    if [ -f $BACKUP_CONFIG_PATH ]; then
+	echo "persist path has file" > /dev/kmsg
+	if [ -L $SYSTEM_CONFIG_PATH ]; then
+	    echo "system has link so exit , do nothing" > /dev/kmsg
+	    exit 0
+	else
+	    echo "system has no link file" > /dev/kmsg
+#	    if [ -f $SYSTEM_CONFIG_PATH ]; then
+#	        echo "system and persist has file, we use link to make" > /dev/kmsg
+	        remount /system
+	        sleep 1
+	        rm -rf $SYSTEM_CONFIG_PATH
+	        ln -s $BACKUP_CONFIG_PATH $SYSTEM_CONFIG_PATH
+		chmod 664 $SYSTEM_CONFIG_PATH
+		chmod 664 $BACKUP_CONFIG_PATH
+		chown system:system $SYSTEM_CONFIG_PATH
+		chown system:system $BACKUP_CONFIG_PATH
+#	    fi
+	fi
+    fi
+fi
+
+sleep 1
+
+echo "cp file end" > /dev/kmsg
+
+exit 0
+
+===== OV9282 STEREO CONFIGURATION =====
+ls: /vendor/etc/qvr/ov9282_stereo_1280x400_cam_config.xml: No such file or directory
+head: /vendor/etc/qvr/ov9282_stereo_1280x400_cam_config.xml: No such file or directory
+
+===== CAMERA 5 KERNEL DEVICE BINDING =====
+/sys/bus/platform/devices/ac50000.qcom,cci:qcom,cam-sensor1
+/sys/bus/platform/devices/ac50000.qcom,cci
+/sys/bus/platform/devices/ac50000.qcom,cci:qcom,cam-sensor0
+/sys/bus/platform/devices/ac50000.qcom,cci:qcom,cam-sensor5
+/sys/devices/platform/soc/18200000.rsc/18200000.rsc:rpmh-regulator-ldoc3/regulator/regulator.39/ac50000.qcom,cci:qcom,cam-sensor5-cam_vdig
+/sys/devices/platform/soc/18200000.rsc/18200000.rsc:rpmh-regulator-ldoa15/regulator/regulator.26/ac50000.qcom,cci:qcom,cam-sensor5-cam_vio
+/sys/devices/platform/soc/ac50000.qcom,cci
+/sys/devices/platform/soc/ac50000.qcom,cci/ac50000.qcom,cci:qcom,cam-sensor1
+/sys/devices/platform/soc/ac50000.qcom,cci/ac50000.qcom,cci:qcom,cam-sensor0
+/sys/devices/platform/soc/ac50000.qcom,cci/ac50000.qcom,cci:qcom,cam-sensor5
+/sys/devices/platform/soc/ad0c144.qcom,gdsc/regulator/regulator.71/ac50000.qcom,cci:qcom,cam-sensor5-cam_clk
+/sys/devices/platform/soc/ad0c144.qcom,gdsc/regulator/regulator.71/ac50000.qcom,cci-gdscr
+--- /sys/bus/platform/devices/ac50000.qcom,cci:qcom,cam-sensor5 ---
+/sys/bus/platform/drivers/qcom,camera
+DRIVER=qcom,camera
+OF_NAME=qcom,cam-sensor5
+OF_FULLNAME=/soc/qcom,cci@ac50000/qcom,cam-sensor5
+OF_COMPATIBLE_0=qcom,cam-sensor
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nqcom,cam-sensor5T<NULL>Cqcom,cam-sensor
+of:Nqcom,cam-sensor5T<NULL>Cqcom,cam-sensor
+qcom,cam-sensor
+--- /sys/bus/platform/devices/ac50000.qcom,cci ---
+/sys/bus/platform/drivers/cam-cci-driver
+DRIVER=cam-cci-driver
+OF_NAME=qcom,cci
+OF_FULLNAME=/soc/qcom,cci@ac50000
+OF_COMPATIBLE_0=qcom,cci
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nqcom,cciT<NULL>Cqcom,cci
+of:Nqcom,cciT<NULL>Cqcom,cci
+qcom,cci
+--- /sys/bus/platform/devices/ac50000.qcom,cci:qcom,cam-sensor0 ---
+/sys/bus/platform/drivers/qcom,camera
+DRIVER=qcom,camera
+OF_NAME=qcom,cam-sensor0
+OF_FULLNAME=/soc/qcom,cci@ac50000/qcom,cam-sensor0
+OF_COMPATIBLE_0=qcom,cam-sensor
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nqcom,cam-sensor0T<NULL>Cqcom,cam-sensor
+of:Nqcom,cam-sensor0T<NULL>Cqcom,cam-sensor
+qcom,cam-sensor
+--- /sys/bus/platform/devices/ac50000.qcom,cci:qcom,cam-sensor1 ---
+/sys/bus/platform/drivers/qcom,camera
+DRIVER=qcom,camera
+OF_NAME=qcom,cam-sensor1
+OF_FULLNAME=/soc/qcom,cci@ac50000/qcom,cam-sensor1
+OF_COMPATIBLE_0=qcom,cam-sensor
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nqcom,cam-sensor1T<NULL>Cqcom,cam-sensor
+of:Nqcom,cam-sensor1T<NULL>Cqcom,cam-sensor
+qcom,cam-sensor
+--- /sys/bus/platform/devices/ac50000.qcom,cci:qcom,cam-sensor5 ---
+/sys/bus/platform/drivers/qcom,camera
+DRIVER=qcom,camera
+OF_NAME=qcom,cam-sensor5
+OF_FULLNAME=/soc/qcom,cci@ac50000/qcom,cam-sensor5
+OF_COMPATIBLE_0=qcom,cam-sensor
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nqcom,cam-sensor5T<NULL>Cqcom,cam-sensor
+of:Nqcom,cam-sensor5T<NULL>Cqcom,cam-sensor
+qcom,cam-sensor
+
+===== PVR AND QVR CONFIGURATION FILES =====
+/vendor/etc/pvr/pvr.preboot.mode.sh
+/vendor/etc/pvr/pvr.vrdisplay.ui.sh
+/vendor/etc/pvr/pxr.init.ota.update.sh
+/vendor/etc/pvr/A7D10_B3_main.mci
+/vendor/etc/pvr/init.pico.sh
+/vendor/etc/pvr/init.pvr.camera.calibration.sh
+/vendor/etc/pvr/A7B10_B2_main.mci
+/vendor/etc/pvr/A7C10_B3_main.mci
+/vendor/etc/pvr/pvr.main.mci.check.sh
+/vendor/etc/pvr/A7C10_B1_main.mci
+/vendor/etc/pvr/main.mci
+/vendor/etc/pvr/pvr.copy.bootanim.sh
+/vendor/etc/pvr/pvr.ipd.check.sh
+/vendor/etc/pvr/A7D10_main.mci
+/vendor/etc/pvr/init.pvr.camera.warmstart.sh
+/vendor/etc/pvr/A7B10_main.mci
+/vendor/etc/pvr/pvr.display.swtich_eb.sh
+/vendor/etc/pvr/init.pvr.chmod.file.sh
+/vendor/etc/pvr/pvr.prop.default.sh
+/vendor/etc/pvr/A7D10_B2_main.mci
+/vendor/etc/pvr/A7B10_B1_main.mci
+/vendor/etc/pvr/init.picovr.post_boot.sh
+/vendor/etc/pvr/pvr.calibration.qcom.sh
+/vendor/etc/pvr/pxr.res.init.sh
+/vendor/etc/pvr/pvr.calibration2.qcom.sh
+/vendor/etc/pvr/pvr.display.fps.sh
+/vendor/etc/pvr/init.btmac.sh
+/vendor/etc/pvr/A7C10_B2_main.mci
+/vendor/etc/pvr/A7D10_B1_main.mci
+/vendor/etc/pvr/A7B10_B3_main.mci
+/vendor/etc/pvr/pxr.vendorhw.check.sh
+/vendor/etc/pvr/A7C10_main.mci
+/vendor/etc/pvr/pvr.otg.mode.sh
+/vendor/etc/pvr/pvr.update.splash.sh
+/vendor/etc/pvr/pxr.ndifirmware.update.sh
+/vendor/etc/pvr/init.factory_reset.sh
+
+===== OV7251 SENSOR MODULE METADATA =====
+--- /vendor/lib64/camera/com.qti.sensor.pico_ov7251_left.so ---
+com.qti.sensor.pico_ov7251_left.so
+GetSensorLibraryAPIs
+--- /vendor/lib64/camera/com.qti.sensor.pico_ov7251_right.so ---
+com.qti.sensor.pico_ov7251_right.so
+GetSensorLibraryAPIs
+--- /vendor/lib64/camera/com.qti.sensor.ov7251_master.so ---
+com.qti.sensor.ov7251_master.so
+GetSensorLibraryAPIs
+--- /vendor/lib64/camera/com.qti.sensor.ov7251_slave.so ---
+com.qti.sensor.ov7251_slave.so
+GetSensorLibraryAPIs
+--- /vendor/lib64/camera/com.qti.sensor.ov680.so ---
+com.qti.sensor.ov680.so
+GetSensorLibraryAPIs
+
+===== CAMERA 5 AND EYE TRACKING LOGS =====
+11-20 16:41:19.210   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 16:41:19.210   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 16:41:52.519   964   964 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 16:41:52.519   964   964 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 16:43:44.502   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 16:43:44.502   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 16:46:21.516   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 16:46:21.516   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 16:49:27.596   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:652 FindBestSensorMode() value is NULL
+11-20 16:49:27.596   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 16:49:27.596   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 16:50:45.620   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 16:50:45.620   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 16:52:46.055   964  4795 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 16:52:46.055   964  4795 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 16:53:43.523   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 16:53:43.523   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 16:54:56.614   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:652 FindBestSensorMode() value is NULL
+11-20 16:54:56.614   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 16:54:56.614   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 16:59:14.723   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 16:59:14.723   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 17:00:54.990   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 17:00:54.991   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 17:03:58.900   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:652 FindBestSensorMode() value is NULL
+11-20 17:03:58.900   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 17:03:58.900   964  1655 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 18:33:09.455 32746 32746 I <KERNEL|(1)kworker/u16:4  >: [34929.620425] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Dropping the link to regulator.26
+11-20 18:33:09.455 32746 32746 I <KERNEL|(1)kworker/u16:4  >: [34929.620530] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Dropping the link to regulator.71
+11-20 18:33:09.475 32746 32746 I <KERNEL|(4)kworker/u16:4  >: [34929.640262] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Dropping the link to regulator.39
+11-20 18:33:10.335 23811 23838 I EyeTrackingService: openCameraList, openSingleCamera 5 ret -1
+11-20 18:33:10.380  7167  7167 E CamX    : [ERROR][CORE   ] camxhwenvironment.cpp:843 ProbeImageSensorModules()  sm8250_sunny_imx471 probe result failed ！
+11-20 18:33:10.446 23811 23838 I EyeTrackingService: openCameraList, openSingleCamera 5 ret -1
+11-20 18:33:10.558 23811 23838 I EyeTrackingService: openCameraList, openSingleCamera 5 ret -1
+11-20 18:33:11.227  7167  7267 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:652 FindBestSensorMode() value is NULL
+11-20 18:33:11.227  7167  7267 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 18:33:11.227  7167  7267 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 18:33:11.243  7257  7257 I <KERNEL|(3)provider@2.4-se>: [34931.408942] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Linked as a consumer to regulator.26
+11-20 18:33:11.257  7257  7257 I <KERNEL|(2)provider@2.4-se>: [34931.422188] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Linked as a consumer to regulator.39
+11-20 18:33:11.277  7257  7257 I <KERNEL|(3)provider@2.4-se>: [34931.442309] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Linked as a consumer to regulator.71
+11-20 18:33:12.321 23811 23838 I EyeTrackingCamera: startPreview: camera right, format 36, width 400, heidht 1600, fps 90, frame_duration 11111111, exposure 2000000, gain 800
+11-20 18:33:12.321 23811 23838 I EyeTrackingService: openCameraList, openSingleCamera 5 ret 0
