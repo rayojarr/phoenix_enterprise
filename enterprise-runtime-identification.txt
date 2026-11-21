@@ -1,0 +1,8 @@
+===== KERNEL COMMAND LINE =====
+ramoops_memreserve=2M rcupdate.rcu_expedited=1 rcu_nocbs=0-7 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm NOT.oidboot.selinux=permissive buildvariant=user androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=7f5a7e6c-6f37-641c-60b8-14242c7133f8 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=7680 androidboot.vbmeta.digest=774ec92f4b3d91aea1ff3c781d3172d819104fcd580c1b1a663ac21b700e4839 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.boot_devices=soc/1d84000.ufshc pvrboot.mode=normal androidboot.serialno=3caa819b qchip.id=dbe91753 loglevel=0 VcomPara=026902640261025C housing.color=green console=off earlycon=off  androidboot.baseband=apq msm_drm.dsi_display0=qcom,mdss_dsi_sharp_ls026b3sa_90_video: androidboot.dtbo_idx=2 androidboot.dtb_idx=3
+
+===== DISPLAY AND PANEL LOGS =====
+
+===== CAMERA AND SENSOR LOGS =====
+
+===== VENDOR CAMERA CONFIGURATIONS =====
