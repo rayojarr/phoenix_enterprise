@@ -1,0 +1,367 @@
+===== ALL SIX ENTERPRISE SENSOR DESCRIPTORS =====
+25316: 			qcom,cam-sensor4 {
+25317: 				cell-index = <0x04>;
+25318: 				compatible = "qcom,cam-sensor";
+25319: 				csiphy-sd-index = <0x01>;
+25320: 				sensor-position-roll = <0x5a>;
+25321: 				sensor-position-pitch = <0x00>;
+25322: 				sensor-position-yaw = <0xb4>;
+25323: 				eeprom-src = <0x695>;
+25324: 				cam_bob-supply = <0x2ca>;
+25325: 				cam_vdig-supply = <0x382>;
+25326: 				cam_vio-supply = <0x7f>;
+25327: 				cam_clk-supply = <0x250>;
+25328: 				regulator-names = "cam_vdig", "cam_vio", "cam_clk";
+25329: 				rgltr-cntrl-support;
+25330: 				pwm-switch;
+25331: 				rgltr-min-voltage = <0x106738 0x1b7740 0x00>;
+25332: 				rgltr-max-voltage = <0x106738 0x1b7740 0x00>;
+25333: 				rgltr-load-current = <0x927c0 0x927c0 0x00>;
+25334: 				gpio-no-mux = <0x00>;
+25335: 				pinctrl-names = "cam_default", "cam_suspend";
+25336: 				pinctrl-0 = <0x46b>;
+25337: 				pinctrl-1 = <0x46c>;
+25338: 				gpios = <0x65 0x5f 0x00 0x65 0x17 0x00 0x65 0x72 0x00>;
+25339: 				gpio-reset = <0x01>;
+25340: 				gpio-standby = <0x02>;
+25341: 				gpio-req-tbl-num = <0x00 0x01 0x02>;
+25342: 				gpio-req-tbl-flags = <0x01 0x00 0x00>;
+25343: 				gpio-req-tbl-label = "CAMIF_MCLK1", "CAM_RESET1", "CAM_STANDBY1";
+25344: 				sensor-mode = <0x00>;
+25345: 				cci-master = <0x00>;
+25346: 				status = "ok";
+25347: 				clocks = <0x6c 0x4b>;
+25348: 				clock-names = "cam_clk";
+25349: 				clock-cntl-level = "turbo";
+25350: 				clock-rates = <0x16e3600>;
+25351: 			};
+
+25353: 			qcom,cam-sensor2 {
+25354: 				cell-index = <0x02>;
+25355: 				compatible = "qcom,cam-sensor";
+25356: 				csiphy-sd-index = <0x03>;
+25357: 				sensor-position-roll = <0x5a>;
+25358: 				sensor-position-pitch = <0x00>;
+25359: 				sensor-position-yaw = <0xb4>;
+25360: 				cam_clk-supply = <0x250>;
+25361: 				cam_bob-supply = <0x2ca>;
+25362: 				regulator-names = "cam_clk";
+25363: 				rgltr-cntrl-support;
+25364: 				pwm-switch;
+25365: 				rgltr-min-voltage = <0x00>;
+25366: 				rgltr-max-voltage = <0x00>;
+25367: 				rgltr-load-current = <0x00>;
+25368: 				gpio-no-mux = <0x00>;
+25369: 				pinctrl-names = "cam_default", "cam_suspend";
+25370: 				pinctrl-0 = <0x46d>;
+25371: 				pinctrl-1 = <0x46e>;
+25372: 				gpios = <0x65 0x60 0x00 0x65 0x73 0x00 0x65 0x2a 0x00>;
+25373: 				gpio-reset = <0x01>;
+25374: 				gpio-standby = <0x02>;
+25375: 				gpio-req-tbl-num = <0x00 0x01 0x02>;
+25376: 				gpio-req-tbl-flags = <0x01 0x00 0x00>;
+25377: 				gpio-req-tbl-label = "CAMIF_MCLK2", "CAM_RESET2", "CAM_STANDBY2";
+25378: 				sensor-mode = <0x00>;
+25379: 				cci-master = <0x01>;
+25380: 				status = "ok";
+25381: 				clocks = <0x6c 0x4d>;
+25382: 				clock-names = "cam_clk";
+25383: 				clock-cntl-level = "turbo";
+25384: 				clock-rates = <0x16e3600>;
+25385: 			};
+
+25387: 			qcom,cam-sensor3 {
+25388: 				cell-index = <0x03>;
+25389: 				compatible = "qcom,cam-sensor";
+25390: 				csiphy-sd-index = <0x04>;
+25391: 				sensor-position-roll = <0x5a>;
+25392: 				sensor-position-pitch = <0x00>;
+25393: 				sensor-position-yaw = <0xb4>;
+25394: 				led-flash-src = <0x696>;
+25395: 				cam_clk-supply = <0x250>;
+25396: 				cam_bob-supply = <0x2ca>;
+25397: 				cam_vana-supply = <0x388>;
+25398: 				regulator-names = "cam_clk", "cam_vana";
+25399: 				rgltr-cntrl-support;
+25400: 				pwm-switch;
+25401: 				rgltr-min-voltage = <0x00 0x2ab980>;
+25402: 				rgltr-max-voltage = <0x00 0x2ab980>;
+25403: 				rgltr-load-current = <0x00 0x5b8d80>;
+25404: 				gpio-no-mux = <0x00>;
+25405: 				pinctrl-names = "cam_default", "cam_suspend";
+25406: 				pinctrl-0 = <0x473>;
+25407: 				pinctrl-1 = <0x474>;
+25408: 				gpios = <0x65 0x63 0x00 0x65 0x73 0x00 0x65 0x2a 0x00 0x65 0x7e 0x00>;
+25409: 				gpio-reset = <0x01>;
+25410: 				gpio-standby = <0x02>;
+25411: 				gpio-custom1 = <0x03>;
+25412: 				gpio-req-tbl-num = <0x00 0x01 0x02 0x03>;
+25413: 				gpio-req-tbl-flags = <0x01 0x00 0x00 0x00>;
+25414: 				gpio-req-tbl-label = "CAMIF_MCLK5", "CAM_RESET5", "CAM_STANDBY5", "CAM_CUSTOM1";
+25415: 				sensor-mode = <0x00>;
+25416: 				cci-master = <0x01>;
+25417: 				status = "ok";
+25418: 				clocks = <0x6c 0x53>;
+25419: 				clock-names = "cam_clk";
+25420: 				clock-cntl-level = "turbo";
+25421: 				clock-rates = <0x16e3600>;
+25422: 			};
+
+25514: 			qcom,cam-sensor5 {
+25515: 				cell-index = <0x05>;
+25516: 				compatible = "qcom,cam-sensor";
+25517: 				csiphy-sd-index = <0x02>;
+25518: 				sensor-position-roll = <0x5a>;
+25519: 				sensor-position-pitch = <0x00>;
+25520: 				sensor-position-yaw = <0xb4>;
+25521: 				cam_bob-supply = <0x2ca>;
+25522: 				cam_vio-supply = <0x37b>;
+25523: 				cam_vdig-supply = <0x383>;
+25524: 				cam_clk-supply = <0x250>;
+25525: 				regulator-names = "cam_vio", "cam_vdig", "cam_clk";
+25526: 				rgltr-cntrl-support;
+25527: 				pwm-switch;
+25528: 				rgltr-min-voltage = <0x1b7740 0x124f80 0x00>;
+25529: 				rgltr-max-voltage = <0x1b7740 0x124f80 0x00>;
+25530: 				rgltr-load-current = <0x927c0 0x927c0 0x00>;
+25531: 				gpio-no-mux = <0x00>;
+25532: 				pinctrl-names = "cam_default", "cam_suspend";
+25533: 				pinctrl-0 = <0x475 0x49a>;
+25534: 				pinctrl-1 = <0x476 0x49b>;
+25535: 				gpios = <0x65 0x64 0x00 0x65 0x05 0x00 0x65 0x25 0x00 0x65 0x4e 0x00 0x65 0x3a 0x00>;
+25536: 				gpio-reset = <0x01>;
+25537: 				gpio-standby = <0x02>;
+25538: 				gpio-custom1 = <0x03>;
+25539: 				gpio-custom2 = <0x04>;
+25540: 				gpio-req-tbl-num = <0x00 0x01 0x02 0x03 0x04>;
+25541: 				gpio-req-tbl-flags = <0x01 0x00 0x00 0x00 0x00>;
+25542: 				gpio-req-tbl-label = "CAMIF_MCLK6", "CAM_RESET6", "CAM_STANDBY6", "CAM_FLASH", "CAM_VIO";
+25543: 				sensor-mode = <0x00>;
+25544: 				cci-master = <0x01>;
+25545: 				status = "ok";
+25546: 				clocks = <0x6c 0x55>;
+25547: 				clock-names = "cam_clk";
+25548: 				clock-cntl-level = "turbo";
+25549: 				clock-rates = <0x124f800>;
+25550: 			};
+
+25552: 			qcom,cam-sensor0 {
+25553: 				cell-index = <0x00>;
+25554: 				compatible = "qcom,cam-sensor";
+25555: 				csiphy-sd-index = <0x05>;
+25556: 				sensor-position-roll = <0x5a>;
+25557: 				sensor-position-pitch = <0x00>;
+25558: 				sensor-position-yaw = <0xb4>;
+25559: 				cam_clk-supply = <0x250>;
+25560: 				cam_bob-supply = <0x2ca>;
+25561: 				regulator-names = "cam_clk";
+25562: 				rgltr-cntrl-support;
+25563: 				pwm-switch;
+25564: 				rgltr-min-voltage = <0x00>;
+25565: 				rgltr-max-voltage = <0x00>;
+25566: 				rgltr-load-current = <0x00>;
+25567: 				gpio-no-mux = <0x00>;
+25568: 				pinctrl-names = "cam_default", "cam_suspend";
+25569: 				pinctrl-0 = <0x46f>;
+25570: 				pinctrl-1 = <0x470>;
+25571: 				gpios = <0x65 0x61 0x00 0x65 0x73 0x00 0x65 0x2a 0x00>;
+25572: 				gpio-reset = <0x01>;
+25573: 				gpio-standby = <0x02>;
+25574: 				gpio-req-tbl-num = <0x00 0x01 0x02>;
+25575: 				gpio-req-tbl-flags = <0x01 0x00 0x00>;
+25576: 				gpio-req-tbl-label = "CAMIF_MCLK3", "CAM_RESET3", "CAM_STANDBY3";
+25577: 				sensor-mode = <0x00>;
+25578: 				cci-master = <0x00>;
+25579: 				status = "ok";
+25580: 				clocks = <0x6c 0x4f>;
+25581: 				clock-names = "cam_clk";
+25582: 				clock-cntl-level = "turbo";
+25583: 				clock-rates = <0x16e3600>;
+25584: 			};
+
+25586: 			qcom,cam-sensor1 {
+25587: 				cell-index = <0x01>;
+25588: 				compatible = "qcom,cam-sensor";
+25589: 				csiphy-sd-index = <0x03>;
+25590: 				sensor-position-roll = <0x5a>;
+25591: 				sensor-position-pitch = <0x00>;
+25592: 				sensor-position-yaw = <0xb4>;
+25593: 				cam_clk-supply = <0x250>;
+25594: 				cam_bob-supply = <0x2ca>;
+25595: 				regulator-names = "cam_clk";
+25596: 				rgltr-cntrl-support;
+25597: 				pwm-switch;
+25598: 				rgltr-min-voltage = <0x00>;
+25599: 				rgltr-max-voltage = <0x00>;
+25600: 				rgltr-load-current = <0x00>;
+25601: 				gpio-no-mux = <0x00>;
+25602: 				pinctrl-names = "cam_default", "cam_suspend";
+25603: 				pinctrl-0 = <0x471>;
+25604: 				pinctrl-1 = <0x472>;
+25605: 				gpios = <0x65 0x62 0x00 0x65 0x73 0x00 0x65 0x2a 0x00>;
+25606: 				gpio-reset = <0x01>;
+25607: 				gpio-standby = <0x02>;
+25608: 				gpio-req-tbl-num = <0x00 0x01 0x02>;
+25609: 				gpio-req-tbl-flags = <0x01 0x00 0x00>;
+25610: 				gpio-req-tbl-label = "CAMIF_MCLK4", "CAM_RESET4", "CAM_STANDBY4";
+25611: 				sensor-mode = <0x00>;
+25612: 				cci-master = <0x00>;
+25613: 				status = "ok";
+25614: 				clocks = <0x6c 0x51>;
+25615: 				clock-names = "cam_clk";
+25616: 				clock-cntl-level = "turbo";
+25617: 				clock-rates = <0x16e3600>;
+25618: 			};
+
+
+===== FIRST AND SECOND ENTERPRISE PANEL IDENTITIES =====
+24354:						qcom,mdss-dsi-panel-width = <0x3c0>;
+24355:						qcom,mdss-dsi-panel-height = <0xe50>;
+24363:						qcom,mdss-dsi-panel-framerate = <0x78>;
+24374:						qcom,mdss-dsc-slice-width = <0x1e0>;
+24375:						qcom,mdss-dsc-slice-per-pkt = <0x02>;
+24379:						qcom,mdss-dsi-panel-phy-timings = [00 25 0a 0a 1b 25 0a 0a 0a 02 04 00 1f 0f];
+24386:			qcom,mdss_dsi_innolux_nt57900_90_video {
+24387:				qcom,mdss-dsi-panel-name = "innolux nt57900 90hz video mode dsi panel";
+24388:				qcom,mdss-dsi-panel-type = "dsi_video_mode";
+24389:				qcom,dsi-ctrl-num = <0x00 0x01>;
+24390:				qcom,dsi-phy-num = <0x00 0x01>;
+24414:				qcom,dsi-supported-dfps-list = <0x5a 0x48>;
+24417:				qcom,mdss-dsi-min-refresh-rate = <0x48>;
+24418:				qcom,mdss-dsi-max-refresh-rate = <0x5a>;
+24433:						qcom,mdss-dsi-panel-width = <0x870>;
+24434:						qcom,mdss-dsi-panel-height = <0x870>;
+24442:						qcom,mdss-dsi-panel-framerate = <0x5a>;
+24458:						qcom,mdss-dsc-slice-width = <0x438>;
+24459:						qcom,mdss-dsc-slice-per-pkt = <0x02>;
+24463:						qcom,mdss-dsi-panel-phy-timings = [00 2a 0a 0b 1b 26 0b 0b 0a 02 04 00 22 10];
+24470:			qcom,mdss_dsi_sharp_ls026b3sa_90_video {
+24471:				qcom,mdss-dsi-panel-name = "sharp ls026b3sa 90hz video mode dsi panel";
+24472:				qcom,mdss-dsi-panel-type = "dsi_video_mode";
+24473:				qcom,dsi-ctrl-num = <0x00 0x01>;
+24474:				qcom,dsi-phy-num = <0x00 0x01>;
+24499:				qcom,dsi-supported-dfps-list = <0x5a 0x48>;
+24502:				qcom,mdss-dsi-min-refresh-rate = <0x48>;
+24503:				qcom,mdss-dsi-max-refresh-rate = <0x5a>;
+24519:						qcom,mdss-dsi-panel-width = <0x870>;
+24520:						qcom,mdss-dsi-panel-height = <0x870>;
+24528:						qcom,mdss-dsi-panel-framerate = <0x5a>;
+24544:						qcom,mdss-dsc-slice-width = <0x21c>;
+24545:						qcom,mdss-dsc-slice-per-pkt = <0x02>;
+24549:						qcom,mdss-dsi-panel-phy-timings = [00 22 08 08 19 23 09 08 09 02 04 00 1c 0d];
+
+===== PHOENIX PANEL INITIALIZATION IMPLEMENTATION =====
+41:static const struct drm_display_mode panel_mode = {
+59:#define PANEL_VTOTAL_72 (((PANEL_SIZE + 57 + 4 + 4) * 90 + 36) / 72)
+128:static int pico4_prepare(struct drm_panel *panel)
+236:			ret = mipi_dsi_dcs_read(ctx->dsi[i], regs[j], &val[j], 1);
+299:	struct drm_display_mode *mode = drm_mode_duplicate(connector->dev, &panel_mode);
+319:static int pico4_get_modes(struct drm_panel *panel, struct drm_connector *connector)
+321:	struct drm_display_mode *mode = pico4_add_mode(connector, panel_mode.vtotal);
+323:	if (!mode || !pico4_add_mode(connector, PANEL_VTOTAL_72))
+332:	.prepare = pico4_prepare,
+336:	.get_modes = pico4_get_modes,
+
+===== PHOENIX PANEL PREPARE AND MODE IMPLEMENTATION =====
+}
+
+static void pico4_supplies_off(struct pico4_panel *ctx, int count)
+{
+	while (--count >= 0)
+		regulator_disable(ctx->supplies[count].consumer);
+}
+
+static int pico4_prepare(struct drm_panel *panel)
+{
+	struct pico4_panel *ctx = to_pico4_panel(panel);
+	int ret, i;
+
+	/* One after the other in the stock order, not the bulk call's parallel ones. */
+	for (i = 0; i < ARRAY_SIZE(ctx->supplies); i++) {
+		ret = regulator_enable(ctx->supplies[i].consumer);
+		if (ret) {
+			pico4_supplies_off(ctx, i);
+			return ret;
+		}
+	}
+	/* vddio settles 20 ms (the stock supply table) */
+	msleep(20);
+	/*
+	 * The lines were taken as the bootloader left them, and it leaves VIO an input: a plain
+	 * set would only latch the value, so each line becomes an output on its first use.
+	 */
+	gpiod_direction_output(ctx->vio, 1);
+
+	/* The stock reset sequence: released 20 ms, held 20 ms, released 30 ms. */
+	gpiod_direction_output(ctx->reset, 0);
+	msleep(20);
+	gpiod_set_value_cansleep(ctx->reset, 1);
+	msleep(20);
+	gpiod_set_value_cansleep(ctx->reset, 0);
+	msleep(30);
+
+	ret = pico4_send(ctx, ctx->on_cmds, ctx->on_len, true);
+	/* The panels' own answer: power mode bit 4 is sleep out, bit 2 display on. */
+	for (i = 0; !ret && i < 2; i++) {
+		u8 mode = 0;
+		int err = mipi_dsi_dcs_get_power_mode(ctx->dsi[i], &mode);
+
+		dev_info(ctx->dev, "panel %d power mode %#04x (%d)\n", i, mode, err);
+	}
+	if (ret) {
+		gpiod_set_value_cansleep(ctx->reset, 1);
+		gpiod_set_value_cansleep(ctx->vio, 0);
+		pico4_supplies_off(ctx, ARRAY_SIZE(ctx->supplies));
+	}
+	return ret;
+}
+
+/*
+ * A boot's panels stay dark after their first power-on, whatever they are shown, until a resume or
+ * until the power-on commands go out again over the running video, with the enable line low. Why is
+static int pico4_unprepare(struct drm_panel *panel)
+{
+	struct pico4_panel *ctx = to_pico4_panel(panel);
+
+	/* The stock power-off commands go in high-speed mode. */
+	pico4_send(ctx, ctx->off_cmds, ctx->off_len, false);
+	gpiod_set_value_cansleep(ctx->reset, 1);
+	gpiod_set_value_cansleep(ctx->vio, 0);
+	pico4_supplies_off(ctx, ARRAY_SIZE(ctx->supplies));
+	return 0;
+}
+
+static struct drm_display_mode *pico4_add_mode(struct drm_connector *connector, int vtotal)
+{
+	struct drm_display_mode *mode = drm_mode_duplicate(connector->dev, &panel_mode);
+
+	if (!mode)
+		return NULL;
+	mode->vsync_start += vtotal - mode->vtotal;
+	mode->vsync_end += vtotal - mode->vtotal;
+	mode->vtotal = vtotal;
+	/* Both panels side by side: the DSI host splits the line between its two links. */
+	mode->clock *= 2;
+	mode->hdisplay *= 2;
+	mode->hsync_start *= 2;
+	mode->hsync_end *= 2;
+	mode->htotal *= 2;
+	mode->width_mm *= 2;
+	mode->type = DRM_MODE_TYPE_DRIVER;
+	drm_mode_set_name(mode);
+	drm_mode_probed_add(connector, mode);
+	return mode;
+}
+
+static int pico4_get_modes(struct drm_panel *panel, struct drm_connector *connector)
+{
+	struct drm_display_mode *mode = pico4_add_mode(connector, panel_mode.vtotal);
+
+	if (!mode || !pico4_add_mode(connector, PANEL_VTOTAL_72))
+		return -ENOMEM;
+	mode->type |= DRM_MODE_TYPE_PREFERRED;
+	connector->display_info.width_mm = mode->width_mm;
+	connector->display_info.height_mm = mode->height_mm;
+	return 2;
+}
+
