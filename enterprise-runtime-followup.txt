@@ -1,0 +1,706 @@
+===== DEVICE PROPERTIES =====
+[dev.mnt.blk.product]: [dm-0]
+[init.svc.cameraserver]: [running]
+[init.svc.display-color-hal-1-0]: [running]
+[init.svc.pico.camera.quickcamera]: [running]
+[init.svc.qti-display]: [stopped]
+[init.svc.vendor.camera-provider-2-4]: [running]
+[init.svc.vendor.qti.hardware.display.allocator]: [running]
+[init.svc.vendor.qti.hardware.display.composer]: [running]
+[init.svc.wifidisplayhalservice]: [running]
+[persist.camera.privapp.list]: [org.codeaurora.snapcam]
+[persist.pvr.cameraRGB.support]: [1]
+[persist.pvr.display.eb_enable]: [1]
+[persist.pvr.display.eb_mode]: [1]
+[persist.pvr.display.eb_use]: [1]
+[persist.pvr.display.type]: [jdi49390]
+[persist.pvr.set.camera_fps]: [1]
+[persist.pxr.usecameraservice]: [false]
+[persist.sys.displayinset.top]: [0]
+[persist.vendor.camera.picoapp.packagelist]: [org.codeaurora.snapcam,com.example.neo3camera,com.pvr.tobservice]
+[persist.vendor.camera.privapp.list]: [org.codeaurora.snapcam]
+[pvr.camera.warmstart.action]: [recoverWarmData]
+[pvr.display.wave.ori_mode]: [2]
+[pvr.focused.display.id]: [0]
+[pxr.vendorhw.product.model]: [PICO 4 Enterprise]
+[pxr.vendorhw.product.name]: [A8E40]
+[ro.boot.boot_devices]: [soc/1d84000.ufshc]
+[ro.boot.hardware]: [qcom]
+[ro.boottime.cameraserver]: [4979631299]
+[ro.boottime.display-color-hal-1-0]: [3877641872]
+[ro.boottime.pico.camera.quickcamera]: [10387611870]
+[ro.boottime.qti-display]: [3309950727]
+[ro.boottime.vendor.camera-provider-2-4]: [3864159112]
+[ro.boottime.vendor.qti.hardware.display.allocator]: [3884445258]
+[ro.boottime.vendor.qti.hardware.display.composer]: [3886608018]
+[ro.boottime.wifidisplayhalservice]: [5005318486]
+[ro.build.display.id]: [5.13.3]
+[ro.build.display_build_number]: [5.13.3]
+[ro.build.product]: [PICOA8110]
+[ro.hardware]: [qcom]
+[ro.hardware.egl]: [adreno]
+[ro.hardware.keystore_desede]: [true]
+[ro.hardware.vulkan]: [adreno]
+[ro.odm.product.cpu.abilist]: [arm64-v8a,armeabi-v7a,armeabi]
+[ro.odm.product.cpu.abilist32]: [armeabi-v7a,armeabi]
+[ro.odm.product.cpu.abilist64]: [arm64-v8a]
+[ro.picovr.product.name]: [Phoenix]
+[ro.product.board]: [kona]
+[ro.product.brand]: [Pico]
+[ro.product.build.date]: [Thu Jul  3 01:13:09 CST 2025]
+[ro.product.build.date.utc]: [1751476389]
+[ro.product.build.fingerprint]: [Pico/Phoenix_ovs/PICOA8110:10/5.13.3/smartcm.1751476389:user/dev-keys]
+[ro.product.build.id]: [5.13.3]
+[ro.product.build.tags]: [dev-keys]
+[ro.product.build.type]: [user]
+[ro.product.build.version.incremental]: [5.13.3]
+[ro.product.build.version.release]: [10]
+[ro.product.build.version.sdk]: [29]
+[ro.product.cpu.abi]: [arm64-v8a]
+[ro.product.cpu.abilist]: [arm64-v8a,armeabi-v7a,armeabi]
+[ro.product.cpu.abilist32]: [armeabi-v7a,armeabi]
+[ro.product.cpu.abilist64]: [arm64-v8a]
+[ro.product.device]: [PICOA8110]
+[ro.product.first_api_level]: [29]
+[ro.product.locale]: [zh-CN]
+[ro.product.manufacturer]: [Pico]
+[ro.product.model]: [A8110]
+[ro.product.name]: [Phoenix_ovs]
+[ro.product.odm.brand]: [Pico]
+[ro.product.odm.device]: [PICOA8110]
+[ro.product.odm.manufacturer]: [Pico]
+[ro.product.odm.model]: [A8110]
+[ro.product.odm.name]: [Phoenix_ovs]
+[ro.product.product.brand]: [Pico]
+[ro.product.product.device]: [PICOA8110]
+[ro.product.product.manufacturer]: [Pico]
+[ro.product.product.model]: [A8110]
+[ro.product.product.name]: [Phoenix_ovs]
+[ro.product.property_source_order]: [odm,vendor,product,product_services,system]
+[ro.product.system.brand]: [Pico]
+[ro.product.system.device]: [PICOA8110]
+[ro.product.system.manufacturer]: [Pico]
+[ro.product.system.model]: [A8110]
+[ro.product.system.name]: [Phoenix_ovs]
+[ro.product.vendor.brand]: [Pico]
+[ro.product.vendor.device]: [PICOA8110]
+[ro.product.vendor.manufacturer]: [Pico]
+[ro.product.vendor.model]: [A8110]
+[ro.product.vendor.name]: [Phoenix_ovs]
+[ro.pvr.2dtovr.display]: [0]
+[ro.pvr.product.global]: [overseas]
+[ro.pvr.product.name]: [Phoenix]
+[ro.pxr.config.camera_mode]: [1]
+[ro.pxr.display.orientation]: [90]
+[ro.surface_flinger.has_HDR_display]: [true]
+[ro.surface_flinger.has_wide_color_display]: [true]
+[ro.vendor.product.cpu.abilist]: [arm64-v8a,armeabi-v7a,armeabi]
+[ro.vendor.product.cpu.abilist32]: [armeabi-v7a,armeabi]
+[ro.vendor.product.cpu.abilist64]: [arm64-v8a]
+[sys.camera.ae.fps]: [60]
+[sys.camera.module.id]: [5]
+[sys.pvr.display.type]: [72.000000]
+[sys.pxr.camera.para]: [2]
+[sys.pxr.mr.rgbcamera.status]: [0]
+[sys.pxr.product.model]: [A8E40]
+[sys.pxr.product.name]: [PICO 4 Enterprise]
+[sys.seethrough.rgbcamera.stat]: [0]
+[vendor.audio.feature.display_port.enable]: [true]
+[vendor.camera.aux.packagelist]: [org.codeaurora.snapcam]
+[vendor.display.comp_mask]: [0]
+[vendor.display.dedicate_dma_pipe_for_sec]: [1]
+[vendor.display.disable_excl_rect]: [0]
+[vendor.display.disable_excl_rect_partial_fb]: [1]
+[vendor.display.disable_hw_recovery_dump]: [1]
+[vendor.display.disable_offline_rotator]: [1]
+[vendor.display.disable_scaler]: [0]
+[vendor.display.enable_default_color_mode]: [1]
+[vendor.display.enable_optimize_refresh]: [1]
+[vendor.display.enable_posted_start_dyn]: [1]
+[vendor.display.enable_wb_cac]: [0]
+[vendor.display.lcd_density]: [640]
+[vendor.display.use_smooth_motion]: [1]
+[vendor.qcom.bluetooth.soc]: [hastings]
+
+===== DISPLAY CONNECTORS =====
+--- /sys/class/drm/card0-DP-1 ---
+disconnected
+--- /sys/class/drm/card0-DSI-1 ---
+connected
+4320x2160x90x331212vid
+4320x2160x72x331212vid
+--- /sys/class/drm/card0-Virtual-1 ---
+connected
+4096x2160
+4096x2160
+2560x1600
+2560x1600
+1920x1440
+1856x1392
+1792x1344
+2048x1152
+1920x1200
+1920x1200
+1920x1080
+1600x1200
+1680x1050
+1680x1050
+1400x1050
+1400x1050
+1600x900
+1280x1024
+1440x900
+1440x900
+1280x960
+1366x768
+1366x768
+1360x768
+1280x800
+1280x800
+1280x768
+1280x768
+1280x720
+1024x768
+800x600
+800x600
+848x480
+640x480
+
+===== CAMERA HAL ENUMERATION =====
+
+== Service global info: ==
+
+Number of camera devices: 7
+Number of normal camera devices: 4
+    Device 0 maps to "0"
+    Device 1 maps to "3"
+    Device 2 maps to "4"
+    Device 3 maps to "5"
+Active Camera Clients:
+[]
+Allowed user IDs: 0
+
+== Camera service events log (most recent at top): ==
+  11-20 08:51:09 : DISCONNECT device 4 client for package  (PID 1017)
+  11-20 08:51:08 : CONNECT device 4 client for package  (PID 1017)
+  11-20 08:51:06 : USER_SWITCH previous allowed user IDs: <None>, current allowed user IDs: 0
+  11-20 08:51:06 : ADD device 0, reason: (Device added)
+  11-20 08:51:06 : ADD device 1, reason: (Device added)
+  11-20 08:51:06 : ADD device 4, reason: (Device status changed from 0 to 1)
+  11-20 08:51:06 : ADD device 4, reason: (Device added)
+  11-20 08:51:06 : ADD device 2, reason: (Device added)
+  11-20 08:51:06 : ADD device 3, reason: (Device added)
+  11-20 08:51:06 : ADD device 5, reason: (Device added)
+
+== Camera device 0 dynamic info: ==
+  Device 0 is closed, no client instance
+== Camera device 1 dynamic info: ==
+  Device 1 is closed, no client instance
+== Camera device 2 dynamic info: ==
+  Device 2 is closed, no client instance
+== Camera device 3 dynamic info: ==
+  Device 3 is closed, no client instance
+== Camera device 4 dynamic info: ==
+  Device 4 is closed, no client instance
+== Camera device 5 dynamic info: ==
+  Device 5 is closed, no client instance
+== Camera Provider HAL legacy/0 (v2.5, remote) static info: 7 devices: ==
+== Camera HAL device device@3.5/legacy/0 (v3.5) static information: ==
+  Resource cost: 100
+  Conflicting devices:
+    6
+  API1 info:
+    Has a flash unit: false
+    Facing: Front
+    Orientation: 270
+  API2 camera characteristics:
+    Dumping camera metadata array: 126 / 126 entries, 5936 / 5936 bytes of extra data.
+      Version: 1, Flags: 00000000
+      android.colorCorrection.availableAberrationModes (00004): byte[3]
+        [0 1 2 ]
+      android.control.aeAvailableAntibandingModes (10012): byte[4]
+        [0 1 2 3 ]
+      android.control.aeAvailableModes (10013): byte[2]
+        [0 1 ]
+      android.control.aeAvailableTargetFpsRanges (10014): int32[6]
+        [15 15 15 30 ]
+        [30 30 ]
+      android.control.aeCompensationRange (10015): int32[2]
+        [-12 12 ]
+      android.control.aeCompensationStep (10016): rational[1]
+        [(1 / 6) ]
+      android.control.afAvailableModes (10017): byte[1]
+        [0 ]
+      android.control.availableEffects (10018): byte[9]
+        [0 1 2 3 4 5 8 7 6 ]
+      android.control.availableSceneModes (10019): byte[16]
+        [0 1 2 3 4 5 6 7 8 9 10 12 13 14 15 18 ]
+      android.control.availableVideoStabilizationModes (1001a): byte[1]
+        [0 ]
+      android.control.awbAvailableModes (1001b): byte[9]
+        [1 2 3 4 5 6 7 8 0 ]
+      android.control.maxRegions (1001c): int32[3]
+        [1 0 0 ]
+      android.control.sceneModeOverrides (1001d): byte[48]
+        [1 1 0 1 1 0 1 1 0 1 1 0 1 1 0 1 ]
+        [1 0 1 1 0 1 1 0 1 1 0 1 1 0 1 1 ]
+        [0 1 1 0 1 1 0 1 1 0 1 1 0 1 1 0 ]
+      android.control.aeLockAvailable (10024): byte[1]
+        [TRUE ]
+      android.control.awbLockAvailable (10025): byte[1]
+        [TRUE ]
+      android.control.availableModes (10026): byte[3]
+        [0 1 2 ]
+      android.control.postRawSensitivityBoostRange (10027): int32[2]
+        [100 3199 ]
+      android.edge.availableEdgeModes (30002): byte[4]
+        [1 2 0 3 ]
+      android.flash.info.available (50000): byte[1]
+        [FALSE ]
+      android.hotPixel.availableHotPixelModes (60001): byte[3]
+        [0 1 2 ]
+      android.jpeg.availableThumbnailSizes (70007): int32[18]
+        [0 0 176 144 ]
+        [240 144 256 144 ]
+        [240 160 256 154 ]
+        [246 184 240 240 ]
+        [320 240 ]
+      android.jpeg.maxSize (70008): int32[1]
+        [628744 ]
+      android.lens.info.availableApertures (90000): float[1]
+        [2.00000000 ]
+      android.lens.info.availableFilterDensities (90001): float[1]
+        [0.00000000 ]
+      android.lens.info.availableFocalLengths (90002): float[1]
+        [4.42999983 ]
+      android.lens.info.availableOpticalStabilization (90003): byte[1]
+        [0 ]
+      android.lens.info.hyperfocalDistance (90004): float[1]
+        [0.25477839 ]
+      android.lens.info.minimumFocusDistance (90005): float[1]
+        [0.00000000 ]
+      android.lens.info.shadingMapSize (90006): int32[2]
+        [17 13 ]
+      android.lens.info.focusDistanceCalibration (90007): byte[1]
+        [APPROXIMATE ]
+      android.lens.facing (80005): byte[1]
+        [EXTERNAL ]
+      android.noiseReduction.availableNoiseReductionModes (a0002): byte[5]
+        [0 1 2 3 4 ]
+      android.request.maxNumOutputStreams (c0006): int32[3]
+        [1 3 2 ]
+      android.request.maxNumInputStreams (c0008): int32[1]
+        [1 ]
+      android.request.pipelineMaxDepth (c000a): byte[1]
+        [8 ]
+      android.request.partialResultCount (c000b): int32[1]
+        [1 ]
+      android.request.availableCapabilities (c000c): byte[8]
+        [BACKWARD_COMPATIBLE RAW YUV_REPROCESSING PRIVATE_REPROCESSING READ_SENSOR_SETTINGS MANUAL_SENSOR BURST_CAPTURE MANUAL_POST_PROCESSING ]
+      android.request.availableRequestKeys (c000d): int32[66]
+        [0 1 2 3 ]
+        [65536 65537 65538 65539 ]
+        [65540 65541 65542 65543 ]
+        [65545 65546 65547 65549 ]
+        [65550 65551 65552 65553 ]
+        [65576 65577 196608 262146 ]
+        [393216 458752 458753 458754 ]
+        [458755 458756 458757 458758 ]
+        [524288 524289 524290 524291 ]
+        [524292 655360 786433 851968 ]
+        [917504 917505 917506 917520 ]
+        [917532 917533 1048576 1114112 ]
+        [1114115 1114128 1245184 1245185 ]
+        [1245186 1245187 1441792 524301 ]
+        [524294 524295 524298 -2142633983 ]
+        [-2142633984 -2142633982 -2142633981 -2142633980 ]
+        [-2142633979 -2142633978 ]
+      android.request.availableResultKeys (c000e): int32[61]
+        [0 1 2 65539 ]
+        [65540 65567 65543 65544 ]
+        [65568 65547 65570 65551 ]
+        [65576 65577 196608 262146 ]
+        [262149 458752 458753 458754 ]
+        [458755 458756 458757 458758 ]
+        [524288 524289 524290 524291 ]
+        [524296 524297 524292 655360 ]
+        [786433 851968 917526 917523 ]
+        [917504 917505 917506 917520 ]
+        [917532 917533 917522 917525 ]
+        [1048576 1114112 1114121 1114124 ]
+        [1114125 1114126 1114118 1114119 ]
+        [1245184 1245185 1245186 1245187 ]
+        [1441792 524301 524294 524295 ]
+        [524298 ]
+      android.request.availableCharacteristicsKeys (c000f): int32[99]
+        [4 65554 65555 65556 ]
+        [65557 65558 65559 65560 ]
+        [65561 65562 65563 65564 ]
+        [65565 65571 65572 65573 ]
+        [65574 65575 65577 1638402 ]
+        [1638401 1638403 196610 327680 ]
+        [393217 458759 458760 589824 ]
+        [589825 589826 589827 589828 ]
+        [589829 589830 589831 524293 ]
+        [1703936 1703937 655362 786438 ]
+        [786440 786442 786443 786444 ]
+        [786445 786446 786447 786448 ]
+        [851972 851977 851978 851979 ]
+        [851976 851980 851981 983040 ]
+        [917526 917523 917534 983041 ]
+        [983042 983043 983044 983045 ]
+        [983046 983047 983048 983049 ]
+        [983050 917507 917508 917509 ]
+        [917510 917511 917512 917513 ]
+        [917514 917516 917517 917518 ]
+        [917519 917529 1048578 1179648 ]
+        [1179650 1179654 1179655 1245188 ]
+        [1245189 1376256 1507329 1572865 ]
+        [524300 524301 524295 524294 ]
+        [524298 1900544 1900545 ]
+      android.request.availableSessionKeys (c0010): int32[8]
+        [65541 -2142633983 -2142633984 -2142633982 ]
+        [-2142633981 -2142633980 -2142633979 -2142633978 ]
+      android.scaler.availableMaxDigitalZoom (d0004): float[1]
+        [8.00000000 ]
+      android.scaler.availableInputOutputFormatsMap (d0009): int32[8]
+        [34 2 35 33 ]
+        [35 2 35 33 ]
+      android.scaler.availableStreamConfigurations (d000a): int32[152]
+        [34 640 480 OUTPUT ]
+        [34 640 480 INPUT ]
+        [35 640 480 OUTPUT ]
+        [35 640 480 INPUT ]
+        [33 640 480 OUTPUT ]
+        [34 640 400 OUTPUT ]
+        [34 640 400 INPUT ]
+        [35 640 400 OUTPUT ]
+        [35 640 400 INPUT ]
+        [33 640 400 OUTPUT ]
+        [34 640 360 OUTPUT ]
+        [34 640 360 INPUT ]
+        [35 640 360 OUTPUT ]
+        [35 640 360 INPUT ]
+        [33 640 360 OUTPUT ]
+        [34 352 288 OUTPUT ]
+        [34 352 288 INPUT ]
+        [35 352 288 OUTPUT ]
+        [35 352 288 INPUT ]
+        [33 352 288 OUTPUT ]
+
+===== CAMERA VIDEO DEVICES =====
+crw-rw---- 1 system camera 247,   0 1970-01-14 14:31 /dev/media0
+crw-rw---- 1 system camera 247,   1 1970-01-14 14:31 /dev/media1
+crw-rw---- 1 system camera 247,   2 1970-01-14 14:31 /dev/media2
+crw-rw-rw- 1 system camera  81,   0 1970-01-14 14:31 /dev/video0
+crw-rw-rw- 1 system camera  81,   1 1970-01-14 14:31 /dev/video1
+crw-rw-rw- 1 system camera  81,   2 1970-01-14 14:31 /dev/video2
+crw-rw-rw- 1 system camera  81,   3 1970-01-14 14:31 /dev/video3
+crw-rw-rw- 1 system camera  81,  32 1970-01-14 14:31 /dev/video32
+crw-rw-rw- 1 system camera  81,  33 1970-01-14 14:31 /dev/video33
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 radio0 -> ../../devices/platform/soc/884000.i2c/i2c-1/1-0064/video4linux/radio0
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev0 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev0
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev1 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev1
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev10 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev10
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev11 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev11
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev12 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev12
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev13 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev13
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev14 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev14
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev15 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev15
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev16 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev16
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev17 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev17
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev18 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev18
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev19 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev19
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev2 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev2
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev20 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev20
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev21 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev21
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev22 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev22
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev23 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev23
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev24 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev24
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev25 -> ../../devices/virtual/video4linux/v4l-subdev25
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev3 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev3
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev4 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev4
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev5 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev5
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev6 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev6
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev7 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev7
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev8 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev8
+lrwxrwxrwx 1 root root 0 2026-11-20 09:05 v4l-subdev9 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/v4l-subdev9
+lrwxrwxrwx 1 root root 0 1970-01-14 14:31 video0 -> ../../devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/video0
+lrwxrwxrwx 1 root root 0 1970-01-14 14:31 video1 -> ../../devices/virtual/video4linux/video1
+lrwxrwxrwx 1 root root 0 1970-01-14 14:31 video2 -> ../../devices/platform/cam_sync/video4linux/video2
+lrwxrwxrwx 1 root root 0 1970-01-14 14:31 video3 -> ../../devices/virtual/video4linux/video3
+lrwxrwxrwx 1 root root 0 1970-01-14 14:31 video32 -> ../../devices/platform/soc/aa00000.qcom,vidc/video4linux/video32
+lrwxrwxrwx 1 root root 0 1970-01-14 14:31 video33 -> ../../devices/platform/soc/aa00000.qcom,vidc/video4linux/video33
+
+===== CAMERA CONFIGURATION FILES =====
+/vendor/etc/init/android.hardware.sensors@2.0-service.rc
+/vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
+/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
+/vendor/etc/init/pico.camera.quickcamera.quickcameramodule@1.0-service_64.rc
+/vendor/etc/permissions/android.hardware.sensor.accelerometer.xml
+/vendor/etc/permissions/android.hardware.camera.full.xml
+/vendor/etc/permissions/android.hardware.sensor.ambient_temperature.xml
+/vendor/etc/permissions/android.hardware.sensor.barometer.xml
+/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+/vendor/etc/permissions/android.hardware.sensor.compass.xml
+/vendor/etc/permissions/android.hardware.sensor.hifi_sensors.xml
+/vendor/etc/permissions/android.hardware.sensor.stepdetector.xml
+/vendor/etc/permissions/android.hardware.camera.front.xml
+/vendor/etc/permissions/android.hardware.sensor.light.xml
+/vendor/etc/permissions/android.hardware.sensor.gyroscope.xml
+/vendor/etc/permissions/android.hardware.camera.flash-autofocus.xml
+/vendor/etc/permissions/android.hardware.sensor.proximity.xml
+/vendor/etc/permissions/android.hardware.camera.raw.xml
+/vendor/etc/permissions/android.hardware.sensor.relative_humidity.xml
+/vendor/etc/permissions/android.hardware.sensor.stepcounter.xml
+/vendor/etc/pvr/init.pvr.camera.calibration.sh
+/vendor/etc/pvr/init.pvr.camera.warmstart.sh
+/vendor/etc/sensors/sns_reg_config
+/vendor/etc/sensors/hals.conf
+/vendor/etc/sensors/config/sns_amd_sw_enabled.json
+/vendor/etc/sensors/config/kona_ak991x_0.json
+/vendor/etc/sensors/config/sns_amd_sw_disabled.json
+/vendor/etc/sensors/config/kona_irq.json
+/vendor/etc/sensors/config/sns_tilt_sw_enabled.json
+/vendor/etc/sensors/config/sxr2130_sns_amd_sw_enabled.json
+/vendor/etc/sensors/config/sns_ccd_v3_walk.json
+/vendor/etc/sensors/config/sns_ccd_v2_walk.json
+/vendor/etc/sensors/config/sns_geomag_rv.json
+/vendor/etc/sensors/config/sns_aont.json
+/vendor/etc/sensors/config/kona_default_sensors.json
+/vendor/etc/sensors/config/sns_pedometer.json
+/vendor/etc/sensors/config/kona_stk3x1x_0.json
+/vendor/etc/sensors/config/sns_bring_to_ear.json
+/vendor/etc/sensors/config/sns_smd.json
+/vendor/etc/sensors/config/sns_tilt_to_wake.json
+/vendor/etc/sensors/config/sns_distance_bound.json
+/vendor/etc/sensors/config/sns_cm.json
+/vendor/etc/sensors/config/sns_dae.json
+/vendor/etc/sensors/config/sns_tilt_sw_disabled.json
+/vendor/etc/sensors/config/sns_basic_gestures.json
+/vendor/etc/sensors/config/sns_rmd.json
+/vendor/etc/sensors/config/sns_ccd.json
+/vendor/etc/sensors/config/sns_rotv.json
+/vendor/etc/sensors/config/kona_power_0.json
+/vendor/etc/sensors/config/sns_mag_cal.json
+/vendor/etc/sensors/config/kona_dynamic_sensors.json
+/vendor/etc/sensors/config/sxr2130_sns_dae.json
+/vendor/etc/sensors/config/sns_mag_cal_legacy.json
+/vendor/etc/sensors/config/wigig_sensing_0.json
+/vendor/etc/sensors/config/sns_facing.json
+/vendor/etc/sensors/config/sns_device_orient.json
+/vendor/etc/sensors/config/sns_dpc.json
+/vendor/etc/sensors/config/sns_tilt.json
+/vendor/etc/sensors/config/sns_amd.json
+/vendor/etc/sensors/config/sxr2130_llcm.json
+/vendor/etc/sensors/config/sns_heart_rate.json
+/vendor/etc/sensors/config/kona_sx932x_0.json
+/vendor/etc/sensors/config/sxr2130_icm4x6xx_0.json
+/vendor/etc/sensors/config/sxr2130_sns_tilt_sw_enabled.json
+/vendor/etc/sensors/config/sns_multishake.json
+/vendor/etc/sensors/config/sns_fmv.json
+/vendor/etc/sensors/config/sns_diag_filter.json
+/vendor/etc/sensors/config/sns_gyro_cal.json
+
+===== CAMERA LOGCAT =====
+11-20 18:33:10.223 23811 23838 I PvrTrackingCamera: cancelRequest: Camera 5 disconnect and acquire mLock, mStatus 1
+11-20 18:33:10.223 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.224 23811 23838 I chatty  : uid=0(root) watchCameraLoop identical 1 line
+11-20 18:33:10.224 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.224 23811 23838 I EyeTrackingService: ~CameraImageListener: E.
+11-20 18:33:10.224 23838 23838 I <KERNEL|(0)watchCameraLoop>: [34930.389169] [aw210xx_led] aw210xx_power_down_2step_2 437: enter
+11-20 18:33:10.224 23838 23838 I <KERNEL|(0)watchCameraLoop>: [34930.389231] [aw210xx_led] aw210xx_power_down_2step_2 437: enter
+11-20 18:33:10.224 23811 23838 I EyeTrackingService: ~CameraImageListener: X.
+11-20 18:33:10.225 23811 23838 I EyeTrackingService: camera 5, lastFn, 0,missFrames 0
+11-20 18:33:10.226 23811 23838 I EyeTrackingService: closeCameraHelper: type 5 X
+11-20 18:33:10.239  7167  7167 I <KERNEL|(2)android.hardwar>: [34930.404439] qcom,eeprom ac4f000.qcom,cci:qcom,eeprom@1: Linked as a consumer to regulator.38
+11-20 18:33:10.262  7167  7167 I <KERNEL|(3)android.hardwar>: [34930.427364] qcom,eeprom ac4f000.qcom,cci:qcom,eeprom@1: Linked as a consumer to regulator.71
+11-20 18:33:10.332  7167  7167 I <KERNEL|(1)android.hardwar>: [34930.497899] CAM_INFO: CAM-SENSOR: cam_sensor_util_power_down: 2229 Enter
+11-20 18:33:10.332  7167  7167 I <KERNEL|(1)android.hardwar>: [34930.497907] CAM_INFO: CAM-SENSOR: cam_sensor_util_power_down: 2248 soc_info.index = 1
+11-20 18:33:10.332  7167  7167 I <KERNEL|(1)android.hardwar>: [34930.498025] qcom,eeprom ac4f000.qcom,cci:qcom,eeprom@1: Dropping the link to regulator.71
+11-20 18:33:10.335 23811 23838 I EyeTrackingService: openCamera: set camera led to mPhoenixLedMode 8
+11-20 18:33:10.335 23811 23838 I EyeTrackingCamera: setLedMode: led mode 8.
+11-20 18:33:10.335 23811 23838 I EyeTrackingCamera: setLedBrightness: brightness 10.
+11-20 18:33:10.335 23811 23838 I EyeTrackingCamera: setFaceLedBrightness: brightness 40.
+11-20 18:33:10.335 23811 23838 E EyeTrackingCamera: Create PicoCameraDevice failed, error number -2.
+11-20 18:33:10.335 23811 23838 I EyeTrackingService: openCameraList, openSingleCamera 5 ret -1
+11-20 18:33:10.335 23811 23838 I EyeTrackingService: openCameraList, retry to open camera 5, times 2
+11-20 18:33:10.335 23811 23838 I PvrTrackingCamera: cancelRequest: Camera 5 disconnect and acquire mLock, mStatus 1
+11-20 18:33:10.335 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.336 23811 23838 I chatty  : uid=0(root) watchCameraLoop identical 1 line
+11-20 18:33:10.336 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.336 23811 23838 I EyeTrackingService: ~CameraImageListener: E.
+11-20 18:33:10.336 23838 23838 I <KERNEL|(3)watchCameraLoop>: [34930.501244] [aw210xx_led] aw210xx_power_down_2step_2 437: enter
+11-20 18:33:10.336 23838 23838 I <KERNEL|(3)watchCameraLoop>: [34930.501316] [aw210xx_led] aw210xx_power_down_2step_2 437: enter
+11-20 18:33:10.336 23811 23838 I EyeTrackingService: ~CameraImageListener: X.
+11-20 18:33:10.337 23811 23838 I EyeTrackingService: camera 5, lastFn, 0,missFrames 0
+11-20 18:33:10.337 23811 23838 I EyeTrackingService: closeCameraHelper: type 5 X
+11-20 18:33:10.355  7167  7167 I <KERNEL|(3)android.hardwar>: [34930.520395] qcom,eeprom ac4f000.qcom,cci:qcom,eeprom@1: Dropping the link to regulator.25
+11-20 18:33:10.375  7167  7167 I <KERNEL|(1)android.hardwar>: [34930.540394] qcom,eeprom ac4f000.qcom,cci:qcom,eeprom@1: Dropping the link to regulator.38
+11-20 18:33:10.380  7167  7167 I <KERNEL|(2)android.hardwar>: [34930.545443] CAM_INFO: CAM-MEMENTO: recoder_sensor_ioctl_info: 644 release dev: cam-eeprom(00000000ed2ad8da), function: 0x1000c, del from list, src_pid: 7167, dst_pid: 7167, session_handle: 0xee0200, dev_handle: 0xf0101
+11-20 18:33:10.380  7167  7167 E CamX    : [ERROR][CORE   ] camxhwenvironment.cpp:843 ProbeImageSensorModules()  sm8250_sunny_imx471 probe result failed ！
+11-20 18:33:10.381  7167  7167 I <KERNEL|(2)android.hardwar>: [34930.546054] CAM_ERR: CAM-SENSOR: cam_sensor_driver_cmd: 1340 Already Sensor Probed in the slot
+11-20 18:33:10.392  7167  7167 I <KERNEL|(3)android.hardwar>: [34930.557893] CAM_ERR: CAM-SENSOR: cam_sensor_driver_cmd: 1340 Already Sensor Probed in the slot
+11-20 18:33:10.402  7167  7167 I <KERNEL|(3)android.hardwar>: [34930.567612] CAM_ERR: CAM-SENSOR: cam_sensor_driver_cmd: 1340 Already Sensor Probed in the slot
+11-20 18:33:10.412  7167  7167 I <KERNEL|(2)android.hardwar>: [34930.577482] CAM_INFO: CAM-MEMENTO: recoder_sensor_ioctl_info: 610 acuiqre dev: cam-eeprom(00000000ed2ad8da), function: 0x1000c, add in list, src_pid: 7167, dst_pid: 7167, session_handle: 0x420200, dev_handle: 0x190101
+11-20 18:33:10.415  7167  7167 I <KERNEL|(3)android.hardwar>: [34930.580381] qcom,eeprom ac4f000.qcom,cci:qcom,eeprom@1: Linked as a consumer to regulator.25
+11-20 18:33:10.438  7167  7167 I <KERNEL|(3)android.hardwar>: [34930.604019] qcom,eeprom ac4f000.qcom,cci:qcom,eeprom@1: Linked as a consumer to regulator.38
+11-20 18:33:10.446 23811 23838 I EyeTrackingService: openCamera: set camera led to mPhoenixLedMode 8
+11-20 18:33:10.446 23811 23838 I EyeTrackingCamera: setLedMode: led mode 8.
+11-20 18:33:10.446 23811 23838 I EyeTrackingCamera: setLedBrightness: brightness 10.
+11-20 18:33:10.446 23811 23838 I EyeTrackingCamera: setFaceLedBrightness: brightness 40.
+11-20 18:33:10.446 23811 23838 E EyeTrackingCamera: Create PicoCameraDevice failed, error number -2.
+11-20 18:33:10.446 23811 23838 I EyeTrackingService: openCameraList, openSingleCamera 5 ret -1
+11-20 18:33:10.446 23811 23838 I EyeTrackingService: openCameraList, retry to open camera 5, times 3
+11-20 18:33:10.446 23811 23838 I PvrTrackingCamera: cancelRequest: Camera 5 disconnect and acquire mLock, mStatus 1
+11-20 18:33:10.446 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.447 23811 23838 I chatty  : uid=0(root) watchCameraLoop identical 1 line
+11-20 18:33:10.447 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:10.447 23811 23838 I EyeTrackingService: ~CameraImageListener: E.
+11-20 18:33:10.447 23838 23838 I <KERNEL|(3)watchCameraLoop>: [34930.612190] [aw210xx_led] aw210xx_power_down_2step_2 437: enter
+11-20 18:33:10.447 23838 23838 I <KERNEL|(3)watchCameraLoop>: [34930.612265] [aw210xx_led] aw210xx_power_down_2step_2 437: enter
+11-20 18:33:10.447 23811 23838 I EyeTrackingService: ~CameraImageListener: X.
+11-20 18:33:10.448 23811 23838 I EyeTrackingService: camera 5, lastFn, 0,missFrames 0
+11-20 18:33:10.448 23811 23838 I EyeTrackingService: closeCameraHelper: type 5 X
+11-20 18:33:10.462  7167  7167 I <KERNEL|(0)android.hardwar>: [34930.627461] qcom,eeprom ac4f000.qcom,cci:qcom,eeprom@1: Linked as a consumer to regulator.71
+11-20 18:33:10.532  7167  7167 I <KERNEL|(3)android.hardwar>: [34930.697499] CAM_INFO: CAM-SENSOR: cam_sensor_util_power_down: 2229 Enter
+11-20 18:33:10.532  7167  7167 I <KERNEL|(3)android.hardwar>: [34930.697505] CAM_INFO: CAM-SENSOR: cam_sensor_util_power_down: 2248 soc_info.index = 1
+11-20 18:33:10.532  7167  7167 I <KERNEL|(3)android.hardwar>: [34930.697606] qcom,eeprom ac4f000.qcom,cci:qcom,eeprom@1: Dropping the link to regulator.71
+11-20 18:33:10.555  7167  7167 I <KERNEL|(0)android.hardwar>: [34930.720346] qcom,eeprom ac4f000.qcom,cci:qcom,eeprom@1: Dropping the link to regulator.25
+11-20 18:33:10.558 23811 23838 I EyeTrackingService: openCamera: set camera led to mPhoenixLedMode 8
+11-20 18:33:10.558 23811 23838 I EyeTrackingCamera: setLedMode: led mode 8.
+11-20 18:33:10.558 23811 23838 I EyeTrackingCamera: setLedBrightness: brightness 10.
+11-20 18:33:10.558 23811 23838 I EyeTrackingCamera: setFaceLedBrightness: brightness 40.
+11-20 18:33:10.558 23811 23838 E EyeTrackingCamera: Create PicoCameraDevice failed, error number -2.
+11-20 18:33:10.558 23811 23838 I EyeTrackingService: openCameraList, openSingleCamera 5 ret -1
+11-20 18:33:10.575  7167  7167 I <KERNEL|(2)android.hardwar>: [34930.740368] qcom,eeprom ac4f000.qcom,cci:qcom,eeprom@1: Dropping the link to regulator.38
+11-20 18:33:10.580  7167  7167 I <KERNEL|(2)android.hardwar>: [34930.745196] CAM_INFO: CAM-MEMENTO: recoder_sensor_ioctl_info: 644 release dev: cam-eeprom(00000000ed2ad8da), function: 0x1000c, del from list, src_pid: 7167, dst_pid: 7167, session_handle: 0x420200, dev_handle: 0x190101
+11-20 18:33:10.595  7167  7167 I ChiOfflinePostproc: postprocservice register started
+11-20 18:33:10.600  7167  7167 I ServiceManagement: Registered vendor.qti.hardware.camera.postproc@1.0::IPostProcService/camerapostprocservice (start delay of 1294ms)
+11-20 18:33:10.600  7167  7167 I ChiOfflinePostproc: postprocservice register successfully
+11-20 18:33:10.600  7167  7167 E CamX    : [ERROR][META   ] camxmetadatapool.cpp:1231 SetMetadataByTag() Invalid input 0x7fcfa86240 count 0 pooltype 0 tagName  client camxContext reqId 1 pipeline camxChiContext
+11-20 18:33:10.601  7167  7167 E CamX    : [ERROR][META   ] camxmetadatapool.cpp:1231 SetMetadataByTag() Invalid input 0x7fcfa86240 count 0 pooltype 0 tagName  client camxContext reqId 1 pipeline camxChiContext
+11-20 18:33:10.601  7167  7167 E CamX    : [ERROR][META   ] camxmetadatapool.cpp:1231 SetMetadataByTag() Invalid input 0x7fcfa87968 count 0 pooltype 0 tagName  client camxContext reqId 1 pipeline camxChiContext
+11-20 18:33:10.601  7167  7167 E CamX    : [ERROR][META   ] camxmetadatapool.cpp:1231 SetMetadataByTag() Invalid input 0x7fcfa86960 count 0 pooltype 0 tagName  client camxContext reqId 1 pipeline camxChiContext
+11-20 18:33:10.602  7167  7167 E CamX    : [ERROR][META   ] camxmetadatapool.cpp:1231 SetMetadataByTag() Invalid input 0x7fcfa86240 count 0 pooltype 0 tagName  client camxContext reqId 1 pipeline camxChiContext
+11-20 18:33:10.602  7167  7167 E CamX    : [ERROR][META   ] camxmetadatapool.cpp:1231 SetMetadataByTag() Invalid input 0x7fcfa86240 count 0 pooltype 0 tagName  client camxContext reqId 1 pipeline camxChiContext
+11-20 18:33:10.602  7167  7167 E CamX    : [ERROR][META   ] camxmetadatapool.cpp:1231 SetMetadataByTag() Invalid input 0x7fcfa87968 count 0 pooltype 0 tagName  client camxContext reqId 1 pipeline camxChiContext
+11-20 18:33:10.602  7167  7167 E CamX    : [ERROR][META   ] camxmetadatapool.cpp:1231 SetMetadataByTag() Invalid input 0x7fcfa86960 count 0 pooltype 0 tagName  client camxContext reqId 1 pipeline camxChiContext
+11-20 18:33:10.603  7167  7167 E CamX    : [ERROR][META   ] camxmetadatapool.cpp:1231 SetMetadataByTag() Invalid input 0x7fcfa86240 count 0 pooltype 0 tagName  client camxContext reqId 1 pipeline camxChiContext
+11-20 18:33:10.603  7167  7167 E CamX    : [ERROR][META   ] camxmetadatapool.cpp:1231 SetMetadataByTag() Invalid input 0x7fcfa86240 count 0 pooltype 0 tagName  client camxContext reqId 1 pipeline camxChiContext
+11-20 18:33:10.605  7167  7167 E CHIUSECASE: [ERROR  ] chxextensionmodule.cpp:4109 UpdateStaticSettings() Failed to find ANDROID_REQUEST_AVAILABLE_REQUEST_KEYS entry
+11-20 18:33:10.605  7167  7167 I chatty  : uid=1047(cameraserver) provider@2.4-se identical 5 lines
+11-20 18:33:10.605  7167  7167 E CHIUSECASE: [ERROR  ] chxextensionmodule.cpp:4109 UpdateStaticSettings() Failed to find ANDROID_REQUEST_AVAILABLE_REQUEST_KEYS entry
+11-20 18:33:10.605  7167  7167 I CamPrvdr@2.4-legacy: Loaded "QTI Camera HAL" camera module
+11-20 18:33:10.609 23811 27846 W PicoCameraPreview: onRegistration: legacy/0 register.
+11-20 18:33:10.609  1017  4793 W PicoCameraPreview: onRegistration: legacy/0 register.
+11-20 18:33:10.609  7167  7167 I ServiceManagement: Registered android.hardware.camera.provider@2.4::ICameraProvider/legacy/0 (start delay of 1304ms)
+11-20 18:33:10.609  7167  7167 I ServiceManagement: Removing namespace from process name android.hardware.camera.provider@2.4-service_64 to provider@2.4-service_64.
+11-20 18:33:10.610  1420  1657 E /system/bin/cameraserver: Can't set scheduler policy on remote service.
+11-20 18:33:10.610  7167  7167 I android.hardware.camera.provider@2.4-service: Registration complete for android.hardware.camera.provider@2.4::ICameraProvider/legacy/0.
+11-20 18:33:10.610 23811 27846 I PicoCameraPreview: Connecting to new camera provider: legacy/0, isRemote? 1
+11-20 18:33:10.610  1420  1657 I CameraProviderManager: Connecting to new camera provider: legacy/0, isRemote? 1
+11-20 18:33:10.610  1017  4793 I PicoCameraPreview: Connecting to new camera provider: legacy/0, isRemote? 1
+11-20 18:33:10.613  1017  4793 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/0
+11-20 18:33:10.614 23811 27846 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/0
+11-20 18:33:10.614  1420  1657 I CameraProviderManager: Enumerating new camera device: device@3.5/legacy/0
+11-20 18:33:10.614  1017  4793 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/1
+11-20 18:33:10.615 23811 27846 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/1
+11-20 18:33:10.615  1017  4793 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/2
+11-20 18:33:10.615  1420  1657 I CameraProviderManager: Enumerating new camera device: device@3.5/legacy/1
+11-20 18:33:10.615 23811 27846 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/2
+11-20 18:33:10.616 23811 27846 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/3
+11-20 18:33:10.616  1420  1657 I CameraProviderManager: Enumerating new camera device: device@3.5/legacy/2
+11-20 18:33:10.616  1017  4793 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/3
+11-20 18:33:10.616 23811 27846 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/4
+11-20 18:33:10.616  1017  4793 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/4
+11-20 18:33:10.616  1420  1657 I CameraProviderManager: Enumerating new camera device: device@3.5/legacy/3
+11-20 18:33:10.617  1017  4793 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/5
+11-20 18:33:10.617 23811 27846 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/5
+11-20 18:33:10.617  1420  1657 I CameraProviderManager: Enumerating new camera device: device@3.5/legacy/4
+11-20 18:33:10.617  1017  4793 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/6
+11-20 18:33:10.617 23811 27846 I PicoCameraPreview: Enumerating new camera device: device@3.5/legacy/6
+11-20 18:33:10.617  1017  4793 I PicoCameraPreview: Camera provider legacy/0 ready with 7 camera devices
+11-20 18:33:10.618  1420  1657 I CameraProviderManager: Enumerating new camera device: device@3.5/legacy/5
+11-20 18:33:10.618 23811 27846 I PicoCameraPreview: Camera provider legacy/0 ready with 7 camera devices
+11-20 18:33:10.618  1420  1657 I CameraProviderManager: Enumerating new camera device: device@3.5/legacy/6
+11-20 18:33:10.618  1420  1657 I CameraProviderManager: Camera provider legacy/0 ready with 7 camera devices
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Status changed for cameraId=5, newStatus=1
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Unknown camera ID 5, a new camera is added
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Status changed for cameraId=3, newStatus=1
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Unknown camera ID 3, a new camera is added
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Status changed for cameraId=2, newStatus=1
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Unknown camera ID 2, a new camera is added
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Status changed for cameraId=4, newStatus=1
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Unknown camera ID 4, a new camera is added
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Status changed for cameraId=1, newStatus=1
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Unknown camera ID 1, a new camera is added
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Status changed for cameraId=6, newStatus=1
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Status changed for cameraId=0, newStatus=1
+11-20 18:33:10.619  1420  1657 I CameraService: onDeviceStatusChanged: Unknown camera ID 0, a new camera is added
+11-20 18:33:10.658 23811 23838 I EyeTrackingService: openCamera, try open 1 cameras, but only 0 cameras is opened
+11-20 18:33:10.658 23811 23838 I EyeTrackingService: openCamera: failed open all cameras.
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: openCamera: standard E
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: openCamera: open camera
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: openCameraList, retry to open camera 5, times 1
+11-20 18:33:11.059 23811 23838 I PvrTrackingCamera: cancelRequest: Camera 5 disconnect and acquire mLock, mStatus 1
+11-20 18:33:11.059 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:11.059 23811 23838 I chatty  : uid=0(root) watchCameraLoop identical 1 line
+11-20 18:33:11.059 23811 23838 I PvrTrackingCamera: disconnect: Camera 5 E, mStatus 1.
+11-20 18:33:11.059 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.224518] [aw210xx_led] aw210xx_power_down_2step_2 437: enter
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: ~CameraImageListener: E.
+11-20 18:33:11.059 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.224601] [aw210xx_led] aw210xx_power_down_2step_2 437: enter
+11-20 18:33:11.059 23811 23838 I EyeTrackingService: ~CameraImageListener: X.
+11-20 18:33:11.061 23811 23838 I EyeTrackingService: camera 5, lastFn, 0,missFrames 0
+11-20 18:33:11.061 23811 23838 I EyeTrackingService: closeCameraHelper: type 5 X
+11-20 18:33:11.181 23811 23838 I EyeTrackingService: openCamera: set camera led to mPhoenixLedMode 8
+11-20 18:33:11.181 23811 23838 I EyeTrackingCamera: setLedMode: led mode 8.
+11-20 18:33:11.181 23811 23838 I EyeTrackingCamera: setLedBrightness: brightness 10.
+11-20 18:33:11.181 23811 23838 I EyeTrackingCamera: setFaceLedBrightness: brightness 40.
+11-20 18:33:11.181 23811 23838 W PvrTrackingCamera: initialize: Camera 5 waited provider for 0 ms
+11-20 18:33:11.186   987  1034 I AdjustCpuGpuFreq: req_type: 2, handle: 103, hint_id: 0x0, hint_type: 0, duration: 1000, opcode: 0x40804200, value: 4095, src_pkg: android.hardware.camera.provider@2.4-service_64, dest_pkg: 
+11-20 18:33:11.186   987  1034 I AdjustCpuGpuFreq: req_type: 2, handle: 103, hint_id: 0x0, hint_type: 0, duration: 1000, opcode: 0x40800200, value: 4095, src_pkg: android.hardware.camera.provider@2.4-service_64, dest_pkg: 
+11-20 18:33:11.186   987  1034 I AdjustCpuGpuFreq: req_type: 2, handle: 103, hint_id: 0x0, hint_type: 0, duration: 1000, opcode: 0x40800100, value: 4095, src_pkg: android.hardware.camera.provider@2.4-service_64, dest_pkg: 
+11-20 18:33:11.186   987  1034 I AdjustCpuGpuFreq: req_type: 2, handle: 103, hint_id: 0x0, hint_type: 0, duration: 1000, opcode: 0x40804100, value: 4095, src_pkg: android.hardware.camera.provider@2.4-service_64, dest_pkg: 
+11-20 18:33:11.186   987  1034 I AdjustCpuGpuFreq: req_type: 2, handle: 103, hint_id: 0x0, hint_type: 0, duration: 1000, opcode: 0x40800000, value: 4095, src_pkg: android.hardware.camera.provider@2.4-service_64, dest_pkg: 
+11-20 18:33:11.186   987  1034 I AdjustCpuGpuFreq: req_type: 2, handle: 103, hint_id: 0x0, hint_type: 0, duration: 1000, opcode: 0x40804000, value: 4095, src_pkg: android.hardware.camera.provider@2.4-service_64, dest_pkg: 
+11-20 18:33:11.188  7167  7267 I Thermal-Lib: Thermal-Lib-Client: Registration successful for camera with handle:1
+11-20 18:33:11.192 23811 23838 I EyeTrackingCamera: [startPreview,179] Camera, 5, mNumPartialResults 1, mUsePartialResult:0
+11-20 18:33:11.192 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.357793] [aw210xx_led] aw210xx_power_up 397: enter
+11-20 18:33:11.205 23811 23838 I EyeTrackingCamera: writeLedNode: E.
+11-20 18:33:11.205 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.370320] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x70=0x00
+11-20 18:33:11.205 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.370873] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x20=0x01
+11-20 18:33:11.206 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.371077] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x58=0xff
+11-20 18:33:11.206 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.371280] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x60=0x03
+11-20 18:33:11.206 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.371480] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x61=0x02
+11-20 18:33:11.206 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.371678] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x21=0xff
+11-20 18:33:11.206 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.371877] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x22=0xff
+11-20 18:33:11.207 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.372075] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x23=0xff
+11-20 18:33:11.207 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.372395] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x24=0xff
+11-20 18:33:11.207 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.372600] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x25=0xff
+11-20 18:33:11.207 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.372843] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x26=0xff
+11-20 18:33:11.208 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.373048] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x27=0xff
+11-20 18:33:11.208 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.373250] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x28=0xff
+11-20 18:33:11.208 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.373451] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x29=0xff
+11-20 18:33:11.208 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.373652] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x46=0x40
+11-20 18:33:11.208 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.373855] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x47=0x40
+11-20 18:33:11.209 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.374057] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x48=0x40
+11-20 18:33:11.209 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.374259] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x49=0x10
+11-20 18:33:11.209 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.374466] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x4a=0x10
+11-20 18:33:11.209 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.374667] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x4b=0x10
+11-20 18:33:11.209 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.374867] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x4c=0x10
+11-20 18:33:11.210 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.375069] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x4d=0x10
+11-20 18:33:11.210 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.375273] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x4e=0x10
+11-20 18:33:11.210 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.375479] [aw210xx_led] aw210xx_reg_store 643: AW21009,reg:0x45=0x00
+11-20 18:33:11.210 23811 23838 I EyeTrackingCamera: writeLedNode: X.
+11-20 18:33:11.210 23811 23838 I PvrTrackingCamera: Camera 5: Creating new stream 0: 400 x 1600, format 36, dataspace 0 rotation 0 consumer usage 0, physicalCameraId 
+11-20 18:33:11.210 23838 23838 I <KERNEL|(2)watchCameraLoop>: [34931.375727] [aw210xx_led] aw210xx_power_down_2step_1 427: enter
+11-20 18:33:11.227  7167  7267 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:652 FindBestSensorMode() value is NULL
+11-20 18:33:11.227  7167  7267 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:677 FindBestSensorMode() seletedSensorModeIndex value is NULL
+11-20 18:33:11.227  7167  7267 E CHIUSECASE: [ERROR  ] chxsensorselectmode.cpp:682 FindBestSensorMode() seleted_sensormode_index is -1
+11-20 18:33:11.227  7167  7267 I CHIUSECASE: Selected Usecase: 7, SelectedMode W=400, H=1600, FPS:30, NumBatchedFrames:0, modeIndex:0, op_mode: 0
+11-20 18:33:11.237  7267  7267 I <KERNEL|(1)HwBinder:7167_1>: [34931.402245] CAM_INFO: CAM-MEMENTO: recoder_sensor_ioctl_info: 614 acuiqre dev: cam-isp(0000000071302e1c), function: 0x10002, add in list, src_pid: 7167, dst_pid: 7167, session_handle: 0xa30200, dev_handle: 0x480102
+11-20 18:33:11.243  7257  7257 I <KERNEL|(3)provider@2.4-se>: [34931.408942] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Linked as a consumer to regulator.26
+11-20 18:33:11.257  7257  7257 I <KERNEL|(2)provider@2.4-se>: [34931.422188] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Linked as a consumer to regulator.39
+11-20 18:33:11.277  7257  7257 I <KERNEL|(3)provider@2.4-se>: [34931.442309] qcom,camera ac50000.qcom,cci:qcom,cam-sensor5: Linked as a consumer to regulator.71
